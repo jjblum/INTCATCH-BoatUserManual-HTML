@@ -17,12 +17,11 @@ INTCATCH boat user manual
    troubleshooting
    safety
    equipment
-   first_setup
    before_deploying
    boat_setup
    controlling_the_boat
    after_deploying
-   data_analysis
+   data
 
 * :ref:`search`
 

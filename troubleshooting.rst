@@ -13,9 +13,10 @@ Troubleshooting
 * tablet app crashes when you try to connect to boat
 * tablet will not connect to the boat
 * tablet connects to boat, but does not display battery voltage or other sensor data
-* BlueBox will not turn on
-* Phone vibrates or makes warning sounds repeatedly (something in the serial loopback chain is not working)
-* Arrow representing boat does not appear on the map
+* BlueBox will not turn on (maybe wires are loose?)
+* Phone vibrates or makes warning sounds repeatedly (something in the serial loopback chain is not working, USB must be in arduino's native port)
+* Phone has stopped warning about missing bluebox, but data doesn't appear on tablet
+* Arrow representing boat does not appear on the map (phone does not have GPS fix)
 * Arrow representing boat does not point in the right direction
 * Sensor data parameters disappear from the bottom of the tablet app
 * Data is not appearing in WAIS/web app
@@ -32,9 +33,14 @@ Troubleshooting
 * LiPo battery is puffy
 * Oops, a wire came loose or I damaged ___
 * Tablet has lost connection to phone, but RC still works (phone may have crashed, WiFi signal too weak)
+* Tablet is connected but boat won't start any waypoints (RC override is probably on)
 * The tablet app map and waypoints don't match where the boat actually is
 * The tablet app map doesn't show any water (too small)
 * The tablet app map doesn't load (forgot to cache it)
+* Blueblox data does not appear in WAIS/web app (bluebox may not have GPS fix or SIM card connection)
+* Cooling pump makes gurgling noises (air in the system, coolant may have leaked)
+* attached a new type of sensor, don't see it on the tablet, but old types show up on tablet (probably need to update software to handle that type of sensor)
+
 
 
 
