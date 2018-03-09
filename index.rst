@@ -8,7 +8,7 @@
 INTCATCH boat user manual
 =========================
 
-.. image:: _static/images/hippos.png
+.. image:: _static/images/robot_at_garda.jpg
 
 .. toctree::
    :maxdepth: 1

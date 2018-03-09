@@ -18,13 +18,16 @@ Charge the phone and tablet
 
 Cache (preload) maps for the tablet
 -----------------------------------------
+[explanation of tile server, vector vs. satellite, zoom levels]
+[pics of the loaded vs. not loaded tablet that I sent to Nathalie]
 
 Fill up cooling loop resevoir
 -----------------------------
-
 Only if it has leaked!
 
-
+Sensor calibration
+------------------
+[brief description, provide links to GoSys information]
 
 
 :ref:`Back to the index <index>`

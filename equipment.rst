@@ -8,15 +8,18 @@ Equipment
 Boat
 ----
 
-* hull
-* white housing - pics of the various connectors locations with labels
+* hull [ABS plastic, two compartments front and rear, sealed interior mostly filled with foam for buoyancy in case of leaking]
+* white housing - pics of the various connectors locations with labels [expands the volume of the front compartment to accommodate GoSys equipment]
 * sensor mount
-* eboard and arduino
-* propeller "power pods"
-* air fan
+* eboard and arduino [there are two versions. Old version requires external cables for loopback]
+* propeller "power pods"  [a modular drive train]
+* air fan [a "lazy susan" base that rotates the heading of the fan to create "vectored thrust"]
 * router
 * cooling pump
-* cable harness
+* cable harness [bundle of wires that runs between rear and front compartment]
+* Platypus sampler  [four parallel sets of tubing, peristaltic pumps, and jars. Controlled with the tablet app]
+* GoSys circuitry [main BB board, DO/Relay board, ISA board]
+* GoSys sensors [DO, pH, EC, ISA]
 
 
 :ref:`Top of this page <equipment>`
