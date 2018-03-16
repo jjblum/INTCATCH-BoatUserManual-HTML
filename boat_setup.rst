@@ -4,10 +4,12 @@ Boat Setup
 ==========
 
 Set the boat down in a flat spot so that the propellers are free to rotate.
+Make sure that there are not any cables touching the propellers!
 
 You will work from the right (starboard) side of the boat.
 
 If the white housing does not have a hinge installed, try to set the boat up against a wall so the lid can lean against it while you work inside the housing.
+If you do not have something to lean the lid against, you should have a helper hold the lid open for you.
 
 .. _startupsequence:
 
@@ -42,7 +44,15 @@ Startup sequence
 Open the white housing 
 ^^^^^^^^^^^^^^^^^^^^^^
 
-asdf
+Remove all 8 black locks around the rim of the white housing.
+Use your thumb to push.
+
+.. raw:: html
+
+	<video width="640" height="480" controls muted> 
+		<source src="_static/videos/sliding_lock_remove.mp4" type="video/mp4"/>
+		Your browser does not support the video tag.
+	</video>
 
 :ref:`Back to the sequence <startupsequence>`
 
@@ -51,7 +61,16 @@ asdf
 Plug in the LiPo battery
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-asdf
+Lay the battery down between the plastic shields in the middle of the compartment.
+It should fit snugly. Lightly push it down until it is flat.
+Finally, connect the yellow xt90 connectors.
+
+.. raw:: html
+
+	<video width="640" height="480" controls muted> 
+		<source src="_static/videos/insert_battery.mp4" type="video/mp4"/>
+		Your browser does not support the video tag.
+	</video>
 
 :ref:`Back to the sequence <startupsequence>`
 
@@ -60,7 +79,14 @@ asdf
 Turn on the e-board
 ^^^^^^^^^^^^^^^^^^^
 
-asdf
+Press the small white button on the eboard - the circuit board installed in the lid of the white housing.
+
+.. raw:: html
+
+   <video width="640" height="480" controls muted> 
+     <source src="_static/videos/eboard_button_closeup.mp4" type="video/mp4"/>
+     Your browser does not support the video tag.
+   </video>
 
 :ref:`Back to the sequence <startupsequence>`
 
@@ -68,7 +94,23 @@ asdf
 
 Phone app: Set vehicle and sensor options
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-asdf
+
+Swipe left to right to view the vehicle and sensor options.
+Scroll down to the "Vehicle Configuration" section. 
+Make sure that the following options are set:
+
+#. Press "Vehicle Type". If you have a propeller boat, select "Differential (Dual Thrust)".
+#. Press "Sensor Type 1". If you have a sampler, select "Sampler". Otherwise, select "None".
+#. Press "Sensor Type 2". Select "BlueBox".
+#. Press "Sensor Type 3". Select "RC (SBUS)".
+#. Make sure that the "Is a BlueBox installed?" checkbox is checked.
+#. Make sure that the "Use Decawave instead of GPS?" checkbox is *NOT* checked.
+
+Swipe right to left to return to the main view.
+
+The app should retain these settings the next time, so if you reuse the same phone with the same boat, you do not have to do this step.
+
+.. ## TODO: need to make a video of sensor options!
 
 :ref:`Back to the sequence <startupsequence>`
 
@@ -76,7 +118,18 @@ asdf
 
 Phone app: Start the app
 ^^^^^^^^^^^^^^^^^^^^^^^^
-See warning about no bluebox data received yet
+
+Press the red circle and drag it to the right to start the app.
+The circle should turn yellow immediately, and then after about 1 second it should turn green.
+The phone should display notifications every few seconds, warning you that it expects to receive data from a BlueBox, but has not received it yet.
+Once the phone is plugged into the rest of the system and the BlueBox, these warnings should stop.
+
+.. raw:: html
+
+   <video width="640" height="480" controls muted> 
+     <source src="_static/videos/phone_app_start.mp4" type="video/mp4"/>
+     Your browser does not support the video tag.
+   </video>
 
 :ref:`Back to the sequence <startupsequence>`
 
@@ -85,7 +138,16 @@ See warning about no bluebox data received yet
 Phone app: Calibrate compass
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-asdf
+Move the phone through the air in front of you in a large figure-8 path.
+This forces the phone to recalibrate its compass.
+Without this, the boat will not be able to correctly measure its heading.
+
+.. raw:: html
+
+   <video width="640" height="480" controls muted> 
+     <source src="_static/videos/compass_calibrate.mp4" type="video/mp4"/>
+     Your browser does not support the video tag.
+   </video>
 
 :ref:`Back to the sequence <startupsequence>`
 
@@ -94,7 +156,15 @@ asdf
 Plug in the phone
 ^^^^^^^^^^^^^^^^^
 
-Hear the ESCs beep.
+Using the USB cable attached to the eboard's arduino, plug in the phone.
+The electronic speed controllers (ESCs) in the boat's rear compartment should beep a pair of low-high sounds.
+
+.. raw:: html
+
+   <video width="640" height="480" controls muted> 
+     <source src="_static/videos/plug_in_phone.mp4" type="video/mp4"/>
+     Your browser does not support the video tag.
+   </video>
 
 :ref:`Back to the sequence <startupsequence>`
 
@@ -103,7 +173,15 @@ Hear the ESCs beep.
 Phone app: Press (and hold for ~ 1 second) the set sensor types button
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-asdf
+Now that the phone is connected to the eboard's arduino, press and hold the button at the bottom of the app.
+This sends a signal from the phone to the arduino to expect the BlueBox and RC receiver.
+
+.. raw:: html
+
+   <video width="640" height="480" controls muted> 
+     <source src="_static/videos/phone_app_sensor_type_button.mp4" type="video/mp4"/>
+     Your browser does not support the video tag.
+   </video>
 
 :ref:`Back to the sequence <startupsequence>`
 
@@ -112,7 +190,7 @@ asdf
 Phone app: Observe IP address
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-asdf
+The IP address it displayed at the top of the app. Remember it. You will need it for the tablet control application.
 
 :ref:`Back to the sequence <startupsequence>`
 
@@ -121,7 +199,15 @@ asdf
 Place the phone on the port wall of the white housing
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-asdf
+The USB slot on the phone should be toward the rear (aft) of the boat.
+Try not to press the side of the phone down too hard - we do not want to hold down the power button accidentally.
+
+.. raw:: html
+
+   <video width="640" height="480" controls muted> 
+     <source src="_static/videos/mount_phone.mp4" type="video/mp4"/>
+     Your browser does not support the video tag.
+   </video>
 
 :ref:`Back to the sequence <startupsequence>`
 
@@ -130,7 +216,14 @@ asdf
 Turn on the BlueBox
 ^^^^^^^^^^^^^^^^^^^
 
-asdf
+Flip the large red switch in the forward right(starboard bow) corner of the white housing.
+
+.. raw:: html
+
+   <video width="640" height="480" controls muted> 
+     <source src="_static/videos/bb_switch_on.mp4" type="video/mp4"/>
+     Your browser does not support the video tag.
+   </video>
 
 :ref:`Back to the sequence <startupsequence>`
 
@@ -168,7 +261,22 @@ asdf
 Close the white housing
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-asdf
+Align the lid with the bottom before trying to slide a lock back into place.
+The lid and bottom need to be compressed together before sliding on a lock.
+To create the compression, you might be tempted to put your weight down on the lid, but you should not do that.
+Instead, you should pinch together the brackets that stick out from the lid and bottom (locks slide onto these) as you start to slide a lock on to maximize the compression.
+
+Remember: if you are having trouble, do not just push harder.
+You should not need a lot of strength. 
+Make sure the brackets are aligned and pinched together, and the black locks should slide on easily.
+
+.. raw:: html
+
+   <video width="640" height="480" controls muted> 
+     <source src="_static/videos/sliding_lock_attach.mp4" type="video/mp4"/>
+     Your browser does not support the video tag.
+   </video>
+
 
 :ref:`Back to the sequence <startupsequence>`
 
