@@ -3,6 +3,8 @@
 Before Deploying
 ================
 
+.. _charge_the_battery:
+
 Charge the LiPo battery
 -------------------------
 

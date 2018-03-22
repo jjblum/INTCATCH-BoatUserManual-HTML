@@ -13,13 +13,14 @@ INTCATCH boat user manual
 .. toctree::
    :maxdepth: 1
 
-   quick_start
-   troubleshooting
    safety
-   equipment
+   quick_start
+   system_overview   
    before_deploying
+   equipment
    boat_setup
    controlling_the_boat
+   troubleshooting
    after_deploying
    data
 
