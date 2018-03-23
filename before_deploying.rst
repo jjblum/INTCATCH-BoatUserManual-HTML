@@ -18,10 +18,14 @@ Charge the LiPo battery
 Charge the phone and tablet
 -----------------------------
 
+.. _cache_map_tiles:
+
 Cache (preload) maps for the tablet
 -----------------------------------------
 [explanation of tile server, vector vs. satellite, zoom levels]
 [pics of the loaded vs. not loaded tablet that I sent to Nathalie]
+
+.. _filling_the_cooling_loop:
 
 Fill up cooling loop resevoir
 -----------------------------

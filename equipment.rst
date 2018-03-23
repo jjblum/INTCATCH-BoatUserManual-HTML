@@ -11,19 +11,29 @@ Boat
 * hull [ABS plastic, two compartments front and rear, sealed interior mostly filled with foam for buoyancy in case of leaking]
 * white housing - pics of the various connectors locations with labels [expands the volume of the front compartment to accommodate GoSys equipment]
 * sensor mount
+* battery
 * :ref:`eboard_and_arduino`
 * propeller "power pods"  [a modular drive train]
 * air fan [a "lazy susan" base that rotates the heading of the fan to create "vectored thrust"]
+* :ref:`escs`
+* :ref:`cooling_loop`
 * router
-* cooling pump
 * cable harness [bundle of wires that runs between rear and front compartment]
 * Platypus sampler  [four parallel sets of tubing, peristaltic pumps, and jars. Controlled with the tablet app]
 * GoSys circuitry [main BB board, DO/Relay board, ISA board]
 * GoSys sensors [DO, pH, EC, ISA]
 
+.. _lipo_battery:
+
+Lithium Polymer (LiPo) battery
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+4S. xt90 connector.
+
+
 .. _eboard_and_arduino:
 
-E-board and Arduino
+E-board and arduino
 ^^^^^^^^^^^^^^^^^^^
 
 The "e-board" refers to the Platypus circuit board mounted to the center of the white housing lid.
@@ -48,9 +58,31 @@ Electronic Speed Controllers (ESCs)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ESCs control the speed of the boat's motors.
-They pull power from the battery according to the signals sent to them by the e-board.
+They pull power from the battery according to the signals sent to them by the :ref:`e-board <eboard_and_arduino>`.
 Each motor has its own ESC. The propeller boat has 2 ESCs, and the airboat has 1.
 ESCs are found in the rear compartment of the boat.
+
+
+.. _cooling_loop:
+
+Cooling Loop
+^^^^^^^^^^^^
+
+There is a closed-loop cooling system in the boats, powered by a small pump.
+The :ref:`ESCs <escs>` and power pod motors are cooled.
+The heat exchanger is the small aluminum tube on the underside of the boat.
+
+
+.. _wifi_router:
+
+WiFi Router
+^^^^^^^^^^^
+
+Ubiquiti bullet.
+
+
+
+
 
 
 Phone and Tablet
@@ -95,6 +127,29 @@ BlueBox and Sensors
 * DO sensor
 * ISA sensor
 * pH sensor
+
+.. _bluebox:
+
+BlueBox
+^^^^^^^
+
+asdf
+
+.. _bluebox_power_switch:
+
+BlueBox power switch
+^^^^^^^^^^^^^^^^^^^^
+
+asdf
+
+.. _bluebox_voltage_regulator:
+
+BlueBox voltage regulator
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+asdf
+
+.. 
 
 :ref:`Top of this page <equipment>`
 

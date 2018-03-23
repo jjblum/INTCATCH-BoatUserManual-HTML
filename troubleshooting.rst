@@ -10,20 +10,21 @@ Troubleshooting
 
 * :ref:`boat_will_not_turn_on`
 * :ref:`escs_do_not_beep`
+* :ref:`do_not_hear_pump`
+* :ref:`pump_gurgling`
+* :ref:`escs_run_hot`
+* :ref:`find_water_in_rear`
+* :ref:`boat_wifi_never_appears`
+* don't remember password to boat WiFi
+* :ref:`bluebox_will_not_turn_on`
+* :ref:`tablet_will_not_connect_to_phone`
 * tablet app crashes when you try to connect to boat
-* tablet will not connect to the boat
 * tablet connects to boat, but does not display battery voltage or other sensor data
-* BlueBox will not turn on (maybe wires are loose?)
 * :ref:`phone_still_warns_no_bluebox`
 * Phone has stopped warning about missing bluebox, but data doesn't appear on tablet
 * Arrow representing boat does not appear on the map (phone does not have GPS fix)
 * Arrow representing boat does not point in the right direction
 * Sensor data parameters disappear from the bottom of the tablet app
-* Data is not appearing in WAIS/web app
-* boat WiFi never appears
-* Don't hear the pump running in the rear compartment
-* don't remember password to boat WiFi
-* Find water in the rear compartment
 * RC does not work at all
 * Airboat fan is extremely loud, yet produces little thrust (backwards)
 * The propellers are turning in the wrong direction
@@ -38,7 +39,7 @@ Troubleshooting
 * The tablet app map doesn't show any water (too small)
 * The tablet app map doesn't load (forgot to cache it)
 * Blueblox data does not appear in WAIS/web app (bluebox may not have GPS fix or SIM card connection)
-* Cooling pump makes gurgling noises (air in the system, coolant may have leaked)
+* Data is not appearing in WAIS/web app
 * attached a new type of sensor, don't see it on the tablet, but old types show up on tablet (probably need to update software to handle that type of sensor)
 
 
@@ -59,7 +60,7 @@ Make sure that the battery :ref:`is plugged in <pluginthebattery>` and :ref:`has
 ESCs do not beep low-high when you plug in the phone
 ----------------------------------------------------
 
-Each ESC is controlled via a 3-wire cable that connects to the :ref:`e-board <eboard_and_arduino>`.
+Each :ref:`ESC <escs>` is controlled via a 3-wire cable that connects to the :ref:`e-board <eboard_and_arduino>`.
 
 Make sure that these cables are correctly plugged into the e-board.
 First, make sure that the ground, signal, and power wires align with the indicators printed on the e-board.
@@ -73,12 +74,144 @@ make sure that you do not have the BlueBox loopback cable (BB-LB) plugged into t
 Each time the system starts successfully, the ESCs were sent an initial sequence of values to "arm" them.
 That sequence of rapid beeping means that the first signal the ESCs received was *NOT* the proper arming sequence.
 
-Tablet will not connect to phone
---------------------------------
+:ref:`Top of this page <troubleshooting>`
 
-* Make sure that the phone and tablet are on the same WiFi network.
-* Make sure that you used the correct IP address displayed by the phone.
+:ref:`Back to the index <index>`
 
+.. _do_not_hear_pump:
+
+Cannot hear the cooling pump running in rear compartment
+--------------------------------------------------------
+
+The :ref:`pump <cooling_loop>` should turn on as soon as you turn on the :ref:`e-board <eboard_and_arduino>`.
+
+If you don't hear a hum coming from the rear compartment of the boat, the most
+likely reason is the pump is not receiving power. 
+Check that the pump is plugged in to its cable in the rear compartment, and check
+that this cable is connected to the e-board.
+
+:ref:`Top of this page <troubleshooting>`
+
+:ref:`Back to the index <index>`
+
+.. _pump_gurgling:
+
+Cooling pump makes gurgling noises
+----------------------------------
+
+The hum from the :ref:`pump <cooling_loop>` should be steady.
+If you hear gurgling, there is too much air in the system.
+You should :ref:`add coolant <filling_the_cooling_loop>`.
+Check for coolant leaks.
+
+:ref:`Top of this page <troubleshooting>`
+
+:ref:`Back to the index <index>`
+
+.. _escs_run_hot:
+
+ESCs and/or motors are very hot
+-------------------------------
+
+The :ref:`cooling loop <cooling_loop>` should maintain reasonable temperatures
+for the :ref:`ESCs <escs>` and motors (if you have a prop boat).
+If they feel significantly hotter than ambient temperature, make sure that
+there is coolant in the loop, the pump is running normally, and that the coolant
+is freely flowing through the loop.
+
+:ref:`Top of this page <troubleshooting>`
+
+:ref:`Back to the index <index>`
+
+.. _find_water_in_rear:
+
+Water is sitting in the rear compartment
+----------------------------------------
+
+There should not be any water in the rear compartment.
+If you see any, you should determine if it is :ref:`coolant <cooling_loop>` or a leak.
+
+Ideally the coolant will be colored, so this will be easy to tell.
+If not, look at the cooling loop's resevoir. It should be nearly full.
+If if it is low, fill it back up and turn on the boat. Look for any coolant leaks.
+
+If you can be sure that there is not a coolant leak, then the water is from a leaky hull.
+The most likely location of a small leak is around the base of the aluminum cooling tube's penetrations.
+Apply a layer of silicone (or similar) sealant there.
+
+:ref:`Top of this page <troubleshooting>`
+
+:ref:`Back to the index <index>`
+
+.. _boat_wifi_never_appears:
+
+Boat's WiFi network does not appear
+-----------------------------------
+
+The boat's :ref:`wifi_router` should generate a WiFi network with a name
+similar to "Platypus-B1". Once you turn on the :ref:`e-board <eboard_and_arduino>`, you may need to wait
+for up to one minute to see the network.
+If the network does not appear after one minute, check that the router
+is plugged into the ethernet cable in the rear compartment, and check
+that that cable is connected to the e-board.
+
+:ref:`Top of this page <troubleshooting>`
+
+:ref:`Back to the index <index>`
+
+
+.. _bluebox_will_not_turn_on:
+
+BlueBox will not turn on
+------------------------
+
+First, make sure that a :ref:`LiPo battery <lipo_battery>` is properly :ref:`plugged in <pluginthebattery>` and :ref:`charged <charge_the_battery>`.
+
+Then, if you flip the :ref:`bluebox_power_switch` on, the :ref:`BlueBox <bluebox>` should turn on.
+If it does not, make sure that no wires have become loose.
+If all the wires are still in their proper connections, and the BlueBox still does not turn on,
+it may have been damaged.
+
+:ref:`Top of this page <troubleshooting>`
+
+:ref:`Back to the index <index>`
+
+.. _tablet_will_not_connect_to_phone:
+
+Tablet app will not connect to phone
+------------------------------------
+
+Make sure that the phone and tablet are on the same WiFi network.
+
+Make sure that you used the correct IP address displayed at the top of the phone app.
+
+:ref:`Top of this page <troubleshooting>`
+
+:ref:`Back to the index <index>`
+
+
+.. _tablet_crashes_when_connect_to_boat:
+
+Tablet app crashes when connecting to phone
+-------------------------------------------
+
+The tablet application uses the MapBox API for the map.
+This API requires that the tablet has an internet connection at least once
+before any map tiles can appear.
+
+Because the application cannot load any map tiles at all, it crashes.
+
+The area where the map usually appears will be completely black until the tablet
+connects to the internet at least once.
+
+To fix this, simply connect the tablet to the internet and open the application.
+The world map should appear, replacing the large black background.
+From this point on, the app should work as normal. 
+Then an internet connection is only required for :ref:`caching new map tiles <cache_map_tiles>`.
+
+:ref:`Top of this page <troubleshooting>`
+
+:ref:`Back to the index <index>`
 
 .. _phone_still_warns_no_bluebox:
 
