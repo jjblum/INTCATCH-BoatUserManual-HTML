@@ -18,13 +18,14 @@ Troubleshooting
 * don't remember password to boat WiFi
 * :ref:`bluebox_will_not_turn_on`
 * :ref:`tablet_will_not_connect_to_phone`
-* tablet app crashes when you try to connect to boat
-* tablet connects to boat, but does not display battery voltage or other sensor data
+* :ref:`tablet_crashes_when_connect_to_boat`
+* :ref:`tablet_connects_but_no_data`
 * :ref:`phone_still_warns_no_bluebox`
-* Phone has stopped warning about missing bluebox, but data doesn't appear on tablet
-* Arrow representing boat does not appear on the map (phone does not have GPS fix)
-* Arrow representing boat does not point in the right direction
-* Sensor data parameters disappear from the bottom of the tablet app
+* :ref:`some_bluebox_data_appears_but_not_all`
+* :ref:`boat_arrow_does_not_appear`
+* :ref:`boat_arrow_points_wrong`
+* :ref:`tablet_data_disappears`
+* Tablet data flickers between two numbers (two T probes on same channel arriving separately)
 * RC does not work at all
 * Airboat fan is extremely loud, yet produces little thrust (backwards)
 * The propellers are turning in the wrong direction
@@ -213,6 +214,28 @@ Then an internet connection is only required for :ref:`caching new map tiles <ca
 
 :ref:`Back to the index <index>`
 
+
+.. _tablet_connects_but_no_data:
+
+Tablet connects to phone, but no data is displayed
+--------------------------------------------------
+
+If the phone app displays an IP address and you have :ref:`started the app<phonestart>`,
+the tablet should be able to :ref:`connect to the phone<connecttablettophone>`.
+If the color bar in the upper left of the tablet app is green, the tablet successfully connected to the phone.
+
+Once this connection is established, the phone should start sending data to the tablet once it is available.
+The phone will send only its location and heading until it is :ref:`plugged into the boat<pluginthephone>`.
+Then, battery voltage should appear automatically, and if a BlueBox is sending data, this should also appear automatically.
+
+If the connection is successful, but if one or more of the types of data described above do not appear,
+then the most likely reason is a software version mismatch between the phone and tablet.
+Make sure that the phone and tablet have the most recent release versions of the INTCATCH software.
+
+:ref:`Top of this page <troubleshooting>`
+
+:ref:`Back to the index <index>`
+
 .. _phone_still_warns_no_bluebox:
 
 Phone never stops notifications about missing BlueBox data
@@ -244,7 +267,101 @@ The hub is on the right (starboard) side of the white housing.
 
 :ref:`Top of this page <troubleshooting>`
 
-.. troubleshooting_
+:ref:`Back to the index <index>`
+
+.. _some_bluebox_data_appears_but_not_all:
+
+Tablet displays some BlueBox data, but not all
+----------------------------------------------
+
+The BlueBox allows a user to change a sensor's name, parameter, units, etc., 
+but the phone and tablet will only display a limited set of data that they expect to receive.
+The list of expected parameters is strict (but not case sensitive).
+
+For example, if you want to display pH data, the parameter field used by the BlueBox
+must be "pH", "PH", "Ph", or "ph". 
+If that is changed to "p_H" or any other variant, 
+the phone will no longer recognize it, and will not relay it to the tablet for display.
+In contrast, the BlueBox will still send the data to the BlueGate cloud database.
+
+Similarly, if a new type of sensor is added to the BlueBox (e.g. a virtual sensor created from a combination of other parameters),
+if that parameter is not already expected by the phone, it will not be relayed to the tablet for display.
+
+The software can be revised to expand the list of expected parameters.
+
+:ref:`Top of this page <troubleshooting>`
 
 :ref:`Back to the index <index>`
 
+.. _tablet_data_disappears:
+
+Tablet displays data, but it disappears
+---------------------------------------
+
+The sensor data display is dynamic. 
+There is not a fixed position for any type of data.
+Once a new parameter is received, the list of parameters is expanded.
+
+To avoid displaying stale data, there is a 10 second deadline for a parameter to reappear.
+Every time a new datum is received, if more than 10 seconds pass before another datum is received,
+that parameter will drop out of the list, and will no longer be displayed.
+The list of parameters can appear to shuffle due to this.
+
+:ref:`Top of this page <troubleshooting>`
+
+:ref:`Back to the index <index>`
+
+
+.. _tablet_data_flickers_between_two_values:
+
+Tablet data display flickers between different values
+-----------------------------------------------------
+
+The sensor data display is sorted by parameter.
+Different probes may share parameters, but measure distinct values.
+For example, the electrical conductivity probe and the dissolved oxygen probe both measure temperature.
+
+
+
+
+.. _boat_arrow_does_not_appear:
+
+Boat arrow does not appear on tablet's map
+------------------------------------------
+
+The location and heading of the boat is represented by a colored arrow displayed on the map.
+The phone's GPS provides the location. 
+If the :ref:`tablet is connected to the phone<connecttablettophone>`,
+and the :ref:`phone app has started<phonestart>`, but an arrow does not appear,
+the phone probably does not have a GPS fix yet.
+
+If the phone does not have a GPS fix, the arrow will appear in a default location.
+Once the phone has a GPS fix, the arrow will jump from the default to its actual location.
+You can press the "Center" button in the upper-left corner of the tablet's map to jump to the boat's arrow.
+
+If the phone never achieves a GPS fix, you will be unable to use the autonomous navigation.
+Make sure that the phone's GPS is on.
+If you are certain that the phone has a GPS fix, but the arrow still never appears,
+make sure the "Use Decawave instead of GPS?" checkbox in the :ref:`phone app options<phoneoptions>` is *NOT* checked.
+
+:ref:`Top of this page <troubleshooting>`
+
+:ref:`Back to the index <index>`
+
+.. _boat_arrow_points_wrong:
+
+Boat arrow points in the wrong direction
+----------------------------------------
+
+The phone's orientation sensors provide the cardinal (compass) heading for the boat.
+When this is working correctly, the arrow should point in the same direction as the boat.
+
+If the arrow does not point in the same direction, there may be one or more causes:
+
+#. The phone's compass needs :ref:`to be calibrated<calibratecompass>`.
+#. The checkboxes in the :ref:`phone app options<phoneoptions>` are not correct.
+#. The phone is not :ref:`mounted in the white housing correctly<attachphonetovelcro>`.
+
+:ref:`Top of this page <troubleshooting>`
+
+:ref:`Back to the index <index>`

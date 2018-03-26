@@ -24,10 +24,10 @@ Startup sequence
 #. Open the phone app
 #. :ref:`phoneoptions`
 #. :ref:`phonestart`
+#. :ref:`rememberip`
 #. :ref:`calibratecompass`
 #. :ref:`pluginthephone`
 #. :ref:`presssensorsbutton`
-#. :ref:`rememberip`
 #. :ref:`attachphonetovelcro`
 #. :ref:`blueboxswitch`
 #. :ref:`verifymissingbluebox`
@@ -133,6 +133,15 @@ Once the phone is plugged into the rest of the system and the BlueBox, these war
 
 :ref:`Back to the sequence <startupsequence>`
 
+.. _rememberip:
+
+Phone app: Observe IP address
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The IP address it displayed at the top of the app. Remember it. You will need it for the tablet control application.
+
+:ref:`Back to the sequence <startupsequence>`
+
 .. _calibratecompass:
 
 Phone app: Calibrate compass
@@ -182,15 +191,6 @@ This sends a signal from the phone to the arduino to expect the BlueBox and RC r
      <source src="_static/videos/phone_app_sensor_type_button.mp4" type="video/mp4"/>
      Your browser does not support the video tag.
    </video>
-
-:ref:`Back to the sequence <startupsequence>`
-
-.. _rememberip:
-
-Phone app: Observe IP address
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-The IP address it displayed at the top of the app. Remember it. You will need it for the tablet control application.
 
 :ref:`Back to the sequence <startupsequence>`
 
