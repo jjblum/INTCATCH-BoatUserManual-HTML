@@ -35,5 +35,16 @@ Sensor calibration
 ------------------
 [brief description, provide links to GoSys information]
 
+.. _install_phone_app:
+
+Installing the phone application
+--------------------------------
+asdf
+
+.. _install_tablet_app:
+
+Installing the tablet application
+---------------------------------
+asdf
 
 :ref:`Back to the index <index>`

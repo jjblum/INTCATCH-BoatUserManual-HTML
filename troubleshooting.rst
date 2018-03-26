@@ -4,7 +4,7 @@ Troubleshooting
 ===============
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 1
 
 :ref:`Back to the index <index>`
 
@@ -20,25 +20,27 @@ Troubleshooting
 * :ref:`tablet_will_not_connect_to_phone`
 * :ref:`tablet_crashes_when_connect_to_boat`
 * :ref:`tablet_connects_but_no_data`
+* :ref:`tablet_data_disappears`
+* :ref:`tablet_data_flickers_between_two_values`
 * :ref:`phone_still_warns_no_bluebox`
 * :ref:`some_bluebox_data_appears_but_not_all`
 * :ref:`boat_arrow_does_not_appear`
 * :ref:`boat_arrow_points_wrong`
-* :ref:`tablet_data_disappears`
-* Tablet data flickers between two numbers (two T probes on same channel arriving separately)
+* :ref:`boat_arrow_does_not_match_true_location`
+* :ref:`boat_gps_multipathing`
+* :ref:`tablet_map_does_not_load`
+* :ref:`tablet_map_tiles_lack_water_details`
+* :ref:`tablet_map_unloads_tiles`
+* Tablet has lost connection to phone, but RC still works (phone may have crashed, WiFi signal too weak)
+* Sensor ___ is not working
 * RC does not work at all
 * Airboat fan is extremely loud, yet produces little thrust (backwards)
 * The propellers are turning in the wrong direction
-* Sensor ___ is not working
 * Propeller boat turns in circles (broken prop)
 * Propeller boat banks to one side despite trying to drive straight (prop reverse pair not installed correctly)
+* Tablet is connected but boat won't start any waypoints (RC override is probably on)
 * LiPo battery is puffy
 * Oops, a wire came loose or I damaged ___
-* Tablet has lost connection to phone, but RC still works (phone may have crashed, WiFi signal too weak)
-* Tablet is connected but boat won't start any waypoints (RC override is probably on)
-* The tablet app map and waypoints don't match where the boat actually is
-* The tablet app map doesn't show any water (too small)
-* The tablet app map doesn't load (forgot to cache it)
 * Blueblox data does not appear in WAIS/web app (bluebox may not have GPS fix or SIM card connection)
 * Data is not appearing in WAIS/web app
 * attached a new type of sensor, don't see it on the tablet, but old types show up on tablet (probably need to update software to handle that type of sensor)
@@ -50,6 +52,8 @@ Boat will not turn on
 ---------------------
 
 Make sure that the battery :ref:`is plugged in <pluginthebattery>` and :ref:`has been charged <charge_the_battery>`.
+
+Make sure that the :ref:`breaker in the rear compartment <cable_harness_and_breaker>` is closed.
 
 :ref:`Top of this page <troubleshooting>`
 
@@ -320,9 +324,18 @@ Tablet data display flickers between different values
 The sensor data display is sorted by parameter.
 Different probes may share parameters, but measure distinct values.
 For example, the electrical conductivity probe and the dissolved oxygen probe both measure temperature.
+Both of these temperature values are sent to the tablet app for display.
 
+The tablet pools all data with the same parameter together into one spot in the display.
+So if the EC probe and DO probe send distinct temperature values, the one that arrives first
+will display, and then the one that arrives second will replace it. 
+Because of this, you may see the displayed value quickly change between values.
 
+In some cases, if there is an issue with a probe, this difference can be unrealistically large.
 
+:ref:`Top of this page <troubleshooting>`
+
+:ref:`Back to the index <index>`
 
 .. _boat_arrow_does_not_appear:
 
@@ -361,6 +374,120 @@ If the arrow does not point in the same direction, there may be one or more caus
 #. The phone's compass needs :ref:`to be calibrated<calibratecompass>`.
 #. The checkboxes in the :ref:`phone app options<phoneoptions>` are not correct.
 #. The phone is not :ref:`mounted in the white housing correctly<attachphonetovelcro>`.
+
+:ref:`Top of this page <troubleshooting>`
+
+:ref:`Back to the index <index>`
+
+
+.. _boat_arrow_does_not_match_true_location:
+
+Boat arrow location on the map doesn't match true location
+----------------------------------------------------------
+
+You should expect an offset error in the phone's GPS of a few meters.
+Because of this, the map will usually not match up to the "true" map.
+For example, the boat can navigate through a narrow canal or close to a shoreline,
+and the boat's arrow might appear outside of the canal or on land.
+
+In these cases, it is best to manually navigate the boat in areas where a collision might occur.
+You can use the "drop waypoint at boat" button to place waypoints on top of the arrow.
+A user would drive the boat around, periodically dropping waypoints.
+In this manner, you can create paths that will not cause collision when they are replayed.
+
+:ref:`Top of this page <troubleshooting>`
+
+:ref:`Back to the index <index>`
+
+.. _boat_gps_multipathing:
+
+Boat arrow moves unnaturally or erratically
+-------------------------------------------
+
+In contrast to the offset error described :ref:`here<boat_arrow_does_not_match_true_location>`,
+if the arrow seems correct some of the time, but drifts around the map,
+a phenomenon called GPS multi-pathing is probably occurring.
+This can occur when large (usually man-made) structures interfere with the boat's view of the skyline.
+
+The signal from GPS satellites is bouncing off of these structures, creating an illusory, erroneous
+GPS location. As the boat moves around, the signals may or may not reflect off of the
+structures, causing the boat arrow to move around in very strange, unexpected ways.
+
+When this occurs, you must manually pilot the boat. 
+Autonomous navigation will fail in very unexpected ways, as it depends on a realistic,
+smoothly changing GPS location.
+
+:ref:`Top of this page <troubleshooting>`
+
+:ref:`Back to the index <index>`
+
+.. _tablet_map_does_not_load:
+
+Tablet map does not load
+------------------------
+
+The tablet map can only display map tiles that it has downloaded from the MapBox tile server.
+When a user navigates the map to a new location and/or zoom level, if the tablet has not already
+downloaded those tiles, the tablet will display a default featureless image.
+The vector map will show a light tan color for land and light blue for water in the default image.
+The satellite image map will show a pure black color for the default image.
+
+.. image:: _static/images/cached_vs_not_cached_map_vectored.jpg
+   :width: 544px
+   :height: 286px
+
+.. image:: _static/images/cached_vs_not_cached_map_satellite.jpg
+   :width: 544px
+   :height: 286px
+
+When you deploy the boat, the tablet is connected to the :ref:`boat's WiFi router<wifi_router>`,
+which does not provide an internet connection.
+Because of this limitation, you need to :ref:`pre-download (cache) the map tiles you need<cache_map_tiles>` before deploying.
+
+:ref:`Top of this page <troubleshooting>`
+
+:ref:`Back to the index <index>`
+
+.. _tablet_map_tiles_lack_water_details:
+
+Tablet map does not show water features
+---------------------------------------
+
+The map tiles that MapBox provides for the tablet app do not always have complete information.
+
+If a water feature is small, it may be completely absent from the vector map, or representing with a simplified thin straight line.
+
+If a water feature is so new that it has not been added to any map tiles, 
+the water feature may be missing from both vector and satellite map tiles.
+
+If a water feature is occluded by trees, buildings, or other tall objects that get in the way of the satellite camera,
+it may not be visible in the satellite map.
+
+:ref:`Top of this page <troubleshooting>`
+
+:ref:`Back to the index <index>`
+
+.. _tablet_map_unloads_tiles:
+
+Tablet map rapidly loses detail after panning or zooming
+--------------------------------------------------------
+
+The MapBox map exhibits a bug, where cached map tiles display in full detail at first, but rapidly start to unload.
+When this occurs, the map display will continuously lose detail despite remaining at the same zoom level.
+
+To make sure this is occurring, first ensure that you have :ref:`cached the map tiles you need<cache_map_tiles>`.
+After caching, make sure the tablet is not connected to the internet.
+Then navigate to the location and zoom level you cached.
+If this bug is occurring, the map will rapidly unload tiles and lose details until it looks as if you never cached the map at all.
+
+To fix this, you will need to first connect the tablet to an internet connection. Then:
+#. Navigate to the Android OS application settings (Settings -> Apps -> Platypus control app)
+#. Press the button to clear data.
+#. Uninstall the app.
+#. :ref:`Reinstall the app<install_tablet_app>`.
+#. Re-cache the tiles.
+
+An issue [WILL BE] logged with MapBox to address this bug.
 
 :ref:`Top of this page <troubleshooting>`
 
