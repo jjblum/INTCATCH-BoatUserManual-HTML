@@ -37,6 +37,7 @@ Startup sequence
 #. :ref:`closewhitehousing`
 #. :ref:`rcpropdirections`
 #. :ref:`checkbackplate`
+#. If you are using an airboat, :ref:`tighten_airfan_bolts`
 #. :ref:`launch`
 
 .. _openthewhitehousing:
@@ -309,6 +310,14 @@ If the rear compartmet is open, slide the plate into place.
 Push down on the plate near each rotating tab as you rotate the tab over the plate.
 
 :ref:`Back to the sequence <startupsequence>`
+
+.. _tighten_airfan_bolts:
+
+Tighten airfan assembly bolts
+-----------------------------
+
+If you are using an airboat, make sure that the bolts at the bottom of the fan assembly are tight.
+Fan vibration causes them to loosen frequently, and they should be checked before each deployment.
 
 .. _launch:
 

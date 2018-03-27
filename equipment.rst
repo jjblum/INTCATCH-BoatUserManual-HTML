@@ -23,6 +23,20 @@ Boat
 * GoSys circuitry [main BB board, DO/Relay board, ISA board]
 * GoSys sensors [DO, pH, EC, ISA]
 
+.. _hull:
+
+Platypus Lutra Hull
+^^^^^^^^^^^^^^^^^^^
+
+Unibody, ABS plastic, filled with foam. Drain hole in front.
+
+.. _white_housing:
+
+INTCATCH White Housing
+^^^^^^^^^^^^^^^^^^^^^^
+
+Installed on top of front boat compartment, protects the BlueBox circuitry.
+
 .. _lipo_battery:
 
 Lithium Polymer (LiPo) battery
@@ -52,6 +66,7 @@ The newer design is smaller, uses only red/black pairs of 45-amp Anderson Power 
 :ref:`Back to the index <index>`
 
 .. _powerpods:
+
 Power Pods
 ^^^^^^^^^^
 

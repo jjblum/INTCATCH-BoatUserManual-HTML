@@ -34,11 +34,12 @@ Troubleshooting
 * Sensor ___ is not working
 * :ref:`rc_does_not_work`
 * :ref:`boat_will_not_start_waypoints`
-* Airboat fan is extremely loud, yet produces little thrust (backwards)
-* The propellers are turning in the wrong direction
-* Propeller boat turns in circles (broken prop)
-* Propeller boat banks to one side despite trying to drive straight (prop reverse pair not installed correctly)
-* LiPo battery is puffy
+* :ref:`propellers_turn_in_wrong_direction`
+* :ref:`boat_banks_to_one_side`
+* :ref:`boat_broken_prop`
+* :ref:`airfan_assembly_will_not_turn`
+* :ref:`airfan_weak_but_loud`
+* :ref:`lipo_is_puffy`
 * Oops, a wire came loose or I damaged ___
 * Blueblox data does not appear in WAIS/web app (bluebox may not have GPS fix or SIM card connection)
 * Data is not appearing in WAIS/web app
@@ -523,7 +524,7 @@ If it is at 0, the maximum trust allowed is 0 - no thrust at all.
 
 :ref:`Back to the index <index>`
 
-.. _propellers turn in wrong direction:
+.. _propellers_turn_in_wrong_direction:
 
 Propellers turn in the wrong direction
 --------------------------------------
@@ -548,6 +549,91 @@ If the propeller is pulling air, you will not feel it.
 
 If only one of the motors runs, it is possible that you have the vehicle type set to vectored, i.e. an airboat.
 If a propeller boat thinks it is an airboat, only one motor will spin.
+
+:ref:`Top of this page <troubleshooting>`
+
+:ref:`Back to the index <index>`
+
+.. _boat_banks_to_one_side:
+
+Prop boat banks to one side instead of driving straight
+-------------------------------------------------------
+
+Make sure that a :ref:`reverse pair of propellers<reverse_pair_props>` is installed on the boat.
+
+:ref:`Top of this page <troubleshooting>`
+
+:ref:`Back to the index <index>`
+
+.. _boat_broken_prop:
+
+Prop boat turns in circles or revs its motors back and forth
+------------------------------------------------------------
+
+If a boat fequently revs its motors back and forth while autonomously navigating straight, 
+one of the propellers may be damaged.
+A broken propeller will cause the thrust on one side of the boat to be greater than the other side,
+causing the boat to turn constantly.
+If the damage is extensive for one propeller but not the other, the boat may even turn in circles.
+
+Check for a damaged propeller.
+
+If the propellers are not damaged but the boat still revs the motors back and forth,
+the :ref:`PID control needs to be adjusted<manual_pid_tuning>`. 
+
+:ref:`Top of this page <troubleshooting>`
+
+:ref:`Back to the index <index>`
+
+.. _airfan_assembly_will_not_turn:
+
+Airboat's airfan assembly will not turn
+---------------------------------------
+
+There is a servo at the bottom of the airfan assembly that is responsible for rotating it left and right.
+
+Make sure that this cable is connected to the 8-pin "S0" connection on the top of the white housing.
+The connection may be labeled as "fan" or something similar.
+
+Check that the vehicle type in the :ref:`phone app options<phoneoptions>` is set to vectored,
+and :ref:`press the set sensors type button<presssensorsbutton>`.
+If an airboat thinks it is a propeller boat, 
+the servo will not receive the proper signals, 
+and the assembly will not turn.
+
+:ref:`Top of this page <troubleshooting>`
+
+:ref:`Back to the index <index>`
+
+.. _airfan_weak_but_loud:
+
+Airboat fan is very loud, but produces little thrust
+----------------------------------------------------
+
+Check if the fan propeller is damaged. 
+If the propeller is intact, make sure that the airfan assembly is not backwards.
+
+If the airfan is mounted backwards, and the fan motor has a reversed phase,
+the thrust will be in the correct direction but will be very weak.
+The airfan motor has a dominant direction - it produces much more thrust in that direction.
+The motor shaft should point to the front of the boat.
+If it is reversed, flip the airfan assembly around and :ref:`reverse the motor's phase<switch_motor_phase>`.
+
+:ref:`Top of this page <troubleshooting>`
+
+:ref:`Back to the index <index>`
+
+.. _lipo_is_puffy:
+
+LiPo battery is puffy
+---------------------
+
+The :ref:`LiPo battery<lipo_battery>` can be damaged if you drain too
+much of the energy.
+It is difficult to say what voltage this occurs at, how long a battery's lifetime will be, etc.
+In any case, a healthy LiPo battery feels firm if you squeeze it.
+If the LiPo battery has become puffy and feels squishy if you squeeze it, 
+do *NOT* continue using it.
 
 :ref:`Top of this page <troubleshooting>`
 

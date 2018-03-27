@@ -42,8 +42,15 @@ Waypoints
 * converting region paths to straight paths to add more points
 * saving and load waypoints
 * speed options
-* manual PID control
+* manual PID adjustment
 * tips for tablet thumbstick teleop
+
+.. _manual_pid_tuning:
+
+Manual PID adjustment
+^^^^^^^^^^^^^^^^^^^^^
+
+asdf
 
 :ref:`Top of this page <controllingtheboat>`
 
