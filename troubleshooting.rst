@@ -31,19 +31,17 @@ Troubleshooting
 * :ref:`tablet_map_does_not_load`
 * :ref:`tablet_map_tiles_lack_water_details`
 * :ref:`tablet_map_unloads_tiles`
-* Tablet has lost connection to phone, but RC still works (phone may have crashed, WiFi signal too weak)
 * Sensor ___ is not working
-* RC does not work at all
+* :ref:`rc_does_not_work`
+* :ref:`boat_will_not_start_waypoints`
 * Airboat fan is extremely loud, yet produces little thrust (backwards)
 * The propellers are turning in the wrong direction
 * Propeller boat turns in circles (broken prop)
 * Propeller boat banks to one side despite trying to drive straight (prop reverse pair not installed correctly)
-* Tablet is connected but boat won't start any waypoints (RC override is probably on)
 * LiPo battery is puffy
 * Oops, a wire came loose or I damaged ___
 * Blueblox data does not appear in WAIS/web app (bluebox may not have GPS fix or SIM card connection)
 * Data is not appearing in WAIS/web app
-* attached a new type of sensor, don't see it on the tablet, but old types show up on tablet (probably need to update software to handle that type of sensor)
 
 
 .. _boat_will_not_turn_on:
@@ -488,6 +486,68 @@ To fix this, you will need to first connect the tablet to an internet connection
 #. Re-cache the tiles.
 
 An issue [WILL BE] logged with MapBox to address this bug.
+
+:ref:`Top of this page <troubleshooting>`
+
+:ref:`Back to the index <index>`
+
+.. _boat_will_not_start_waypoints:
+
+Boat will not start navigating toward waypoints
+-----------------------------------------------
+
+In the upper-left corner of the tablet, you can see the "Waypoint Status".
+If that shows "GOING", but the boat is not moving, make sure that the :ref:`RC override is turned off<rc_override>`.
+
+:ref:`Top of this page <troubleshooting>`
+
+:ref:`Back to the index <index>`
+
+.. _rc_does_not_work:
+
+RC does not work
+----------------
+
+First, make sure that the "model" selected in the FrSky transmitter matches the receiver in the boat you are trying to control.
+Each model is unique to a receiver. 
+Usually the model, boat, and BlueBox will share the same ID to make this easier.
+If you have the correct model selected, the :ref:`RC receiver<rc_receiver>` in the boat will show a green LED.
+Otherwise, the receiver will show a red LED.
+
+Second, make sure that the :ref:`RC override is turned on<rc_override>`.
+
+Lastly, make sure that the :ref:`throttle<rc_throttle>` is not all the way down.
+If it is at 0, the maximum trust allowed is 0 - no thrust at all.
+
+:ref:`Top of this page <troubleshooting>`
+
+:ref:`Back to the index <index>`
+
+.. _propellers turn in wrong direction:
+
+Propellers turn in the wrong direction
+--------------------------------------
+
+Five things control the direction of the thrust provided by a propeller.
+
+#. The control signal sent to the :ref:`ESC<escs>`, which ranges between -1 and 1.
+#. Which control signal is being sent to the starboard ESC vs. the signal sent to the port ESC.
+#. The direction the motor turns when the control signal is positive or negative, the "phase" of the motor.
+#. :ref:`The pitch of the propeller blades<reverse_pair_props>` - this determines a forward or backward thrust for a given rotation direction.
+#. The vehicle type listed in the :ref:`phone app options<phoneoptions>`.
+
+With the boat on the shore, and the propellers free to spin in the air,
+use the :ref:`RC control<rc_control>` to perform three tests.
+Make sure that the phone is :ref:`plugged in<pluginthephone>`, and you have :ref:`pressed the sensor type button<presssensorsbutton>`.
+During each test, place your hand behind the propellers and feel for air pushed by the propeller as it spins.
+If the propeller is pulling air, you will not feel it.
+
+* Test 1: thrust forward. If a propeller does not push air backwards, the motor is out of phase or the reverse pair is backwards. Open the rear compartment and :ref:`reverse the motor phase<switch_motor_phase>`.
+* Test 2: turn left. The left propeller should suck air, and the right propeller should push air backwards. If the reverse is true, switch the 3-wire cables on the e-board.
+* Test 3: turn right. If you have completed Test 1 and 2 correctly, the left propeller should push air, and the right should pull air.
+
+If only one of the motors runs, it is possible that you have the vehicle type set to vectored, i.e. an airboat.
+If a propeller boat thinks it is an airboat, only one motor will spin.
 
 :ref:`Top of this page <troubleshooting>`
 

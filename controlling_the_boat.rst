@@ -49,11 +49,48 @@ Waypoints
 
 :ref:`Back to the index <index>`
 
+.. _rc_control:
+
 RC manual teleoperation
 -----------------------
 
-* override
-* power envelope left stick
+.. _rc_override:
+
+Override
+^^^^^^^^^^^
+
+.. raw:: html
+
+   <video width="640" height="480" controls muted> 
+     <source src="_static/videos/rc_override.mp4" type="video/mp4"/>
+     Your browser does not support the video tag.
+   </video>
+
+.. _rc_throttle:
+
+Power throttle
+^^^^^^^^^^^^^^
+
+.. raw:: html
+
+   <video width="640" height="480" controls muted> 
+     <source src="_static/videos/rc_control_throttle.mp4" type="video/mp4"/>
+     Your browser does not support the video tag.
+   </video>
+
+.. _rc_thrust_and_rudder:
+
+Thrust and Rudder
+^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+   <video width="640" height="480" controls muted> 
+     <source src="_static/videos/rc_control_thrust_and_rudder.mp4" type="video/mp4"/>
+     Your browser does not support the video tag.
+   </video>
+
+
 * right stick thrust and turn on one stick
 * tips for airboat steering
 

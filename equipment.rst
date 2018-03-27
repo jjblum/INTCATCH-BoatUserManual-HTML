@@ -51,6 +51,11 @@ The newer design is smaller, uses only red/black pairs of 45-amp Anderson Power 
 
 :ref:`Back to the index <index>`
 
+.. _powerpods:
+Power Pods
+^^^^^^^^^^
+
+Platypus modular drivetrain
 
 .. _escs:
 
@@ -61,6 +66,24 @@ ESCs control the speed of the boat's motors.
 They pull power from the battery according to the signals sent to them by the :ref:`e-board <eboard_and_arduino>`.
 Each motor has its own ESC. The propeller boat has 2 ESCs, and the airboat has 1.
 ESCs are found in the rear compartment of the boat.
+
+.. _reverse_pair_props:
+
+Left/Right Reverse Pair of Propellers
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The propeller with part number that ends in "L", e.g. 2317.51L is a reverse pitch propeller.
+It is mounted to the left (port) side drive train.
+
+When the propeller turns, in converts motor torque into forward or backward thrust.
+The direction of the pitch determines if the thrust is forward or backward for a clockwise rotation.
+
+A side-effect of a submerged propeller spinning underwater is a reaction torque loading the entire boat hull.
+This reaction causes the boat to try to bank to the side.
+
+If the boat used two propellers that had the same pitch (instead of the reverse pair), 
+the boat would bank sharply whenever you tried to thrust forward.
+But if the boat has a reverse pair, the reaction torque from both propellers cancels each other out, and the boat will drive straight.
 
 
 .. _cooling_loop:
@@ -101,12 +124,20 @@ Phone and Tablet
 
 :ref:`Back to the index <index>`
 
+.. _rc_equipment:
 
 RC control
 ----------
 
-* RC transmitter
-* RC receiver
+.. _rc_transmitter:
+
+FrSky Taranis X9D Plus
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. _rc_receiver:
+
+FrSky X8R
+^^^^^^^^^
 
 :ref:`Top of this page <equipment>`
 

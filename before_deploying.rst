@@ -31,6 +31,28 @@ Fill up cooling loop resevoir
 -----------------------------
 Only if it has leaked!
 
+.. _switch_motor_phase:
+
+Reverse a motor's phase
+-----------------------
+If a motor is :ref:`spinning in the wrong direction<propellers turn in wrong direction>`,
+you can fix that by switching any two of the three wire connections.
+For example, if the starting configuration is
+
+* Wire 1a <--> Wire 1b
+* Wire 2a <--> Wire 2b
+* Wire 3a <--> Wire 3b
+
+switch two wires so that the new configuration is
+
+* Wire 1a <--> *Wire 2b*
+* Wire 2a <--> *Wire 1b*
+* Wire 3a <--> Wire 3b
+
+
+
+.. _bluebox_sensor_calibration:
+
 Sensor calibration
 ------------------
 [brief description, provide links to GoSys information]
