@@ -5,72 +5,121 @@ Equipment
 
 :ref:`Back to the index <index>`
 
+* :ref:`boat`
+* :ref:`rc_equipment`
+* :ref:`phone_and_tablet`
+* :ref:`bluebox_and_sensors`
+* :ref:`platypus_sampler`
+* :ref:`personal_genomics`
+
+.. _boat:
+
 Boat
 ----
 
-* hull [ABS plastic, two compartments front and rear, sealed interior mostly filled with foam for buoyancy in case of leaking]
-* white housing - pics of the various connectors locations with labels [expands the volume of the front compartment to accommodate GoSys equipment]
-* sensor mount
-* battery
+* :ref:`hull`
+* :ref:`white_housing`
+* :ref:`sensor_mount`
+* :ref:`lipo_battery`
 * :ref:`eboard_and_arduino`
-* propeller "power pods"  [a modular drive train]
-* air fan [a "lazy susan" base that rotates the heading of the fan to create "vectored thrust"]
+* :ref:`power_pods`
+* :ref:`reverse_pair_props`
+* :ref:`air_fan`
 * :ref:`escs`
 * :ref:`cooling_loop`
-* router
-* cable harness [bundle of wires that runs between rear and front compartment]
-* Platypus sampler  [four parallel sets of tubing, peristaltic pumps, and jars. Controlled with the tablet app]
-* GoSys circuitry [main BB board, DO/Relay board, ISA board]
-* GoSys sensors [DO, pH, EC, ISA]
+* :ref:`wifi_router`
+* :ref:`cable_harness_and_breaker`
 
 .. _hull:
 
 Platypus Lutra Hull
 ^^^^^^^^^^^^^^^^^^^
 
-Unibody, ABS plastic, filled with foam. Drain hole in front.
+The Platypus Lutra platform was designed with a focus on affordability,
+while still providing autonomous capability.
+
+The hull is:
+
+* A unibody design with two compartments
+* Formed from tough ABS plastic
+* Approximately 1 m length x 0.5 m width
+* Filled with flotation foam, minimizing the impact of a hull leak
+* Light enough to carry under-arm
 
 .. _white_housing:
 
 INTCATCH White Housing
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Installed on top of front boat compartment, protects the BlueBox circuitry.
+The INTCATCH project adds a variety of sensors to the platform, and incorporates a cloud data gateway
+in the form of GO Systemelektronik GmbH BlueBox system.
+
+An extra housing was designed to accommodate the additional electronics 
+required for this integration.
+Nicknamed the "white housing", it is installed on top of front boat compartment,
+replacing the acrylic plate used in the base Platypus product.
+
+.. _sensor_mount:
+
+INTCATCH Sensor Mount
+^^^^^^^^^^^^^^^^^^^^^
+
+This two-piece frame allows the sensors to be mounted to the underside of the boat.
+The bottom piece can be removed, allowing direct access to the sensor probes.
 
 .. _lipo_battery:
 
 Lithium Polymer (LiPo) battery
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-4S. xt90 connector.
+The boat can draw over 60 amps of current, so it can be very power hungry.
+A LiPo battery provides the energy density and maximum current draw necessary to operate the boat.
+The battery is held in the front compartment.
+
+The boat can accept both 3S (3 cells) and 4S (4 cells), 
+as long as it uses an XT-90 connector.
+
+The most commonly used battery is the Turnigy Multistar 4S, 16 Ah, 10C battery.
+
+.. image:: _static/images/battery.jpg
+   :alt: battery
 
 
 .. _eboard_and_arduino:
 
-E-board and arduino
+E-board and Arduino
 ^^^^^^^^^^^^^^^^^^^
 
 The "e-board" refers to the Platypus circuit board mounted to the center of the white housing lid.
-This circuit board includes an Arduino Due board, and handles all of the control signals into and out of the autonomous boat.
-It supplies power to the boat's WiFi router, cooling loop pump, and the phone.
+
+This circuit board includes an Arduino Due board, 
+and handles all of the control signals into and out of the autonomous boat.
+It also supplies power to the boat's WiFi router, cooling loop pump, and the phone.
 The :ref:`ESCs <escs>` are controlled with the 3-wire cables attached to the e-board.
 
 It is important to note that there are two revisions of the e-board.
-Platypus revised their e-board design during the course of INTCATCH, thus both types are used in the first 10 prototype boats.
-The older design is larger, uses yellow xt60 connectors, and requires external cables to connect to the BlueBox and RC receiver.
+Platypus revised their e-board design during the course of INTCATCH, 
+thus both types are used in the first 10 prototype boats.
+The older design is larger, uses yellow XT60 connectors, and requires external cables to connect to the BlueBox and RC receiver.
 The newer design is smaller, uses only red/black pairs of 45-amp Anderson Power Pole connectors, and uses internal cables to connect to the bluebox and RC receiver.
+
+[IMAGE: OLD EBOARD]
+
+[IMAGE: NEW EBOARD]
 
 
 :ref:`Top of this page <equipment>`
 
 :ref:`Back to the index <index>`
 
-.. _powerpods:
+.. _power_pods:
 
 Power Pods
 ^^^^^^^^^^
 
-Platypus modular drivetrain
+This term refers to the Platypus modular drivetrain in the rear compartment of propeller boats.
+There are two frames that mount a motor, simple gearing, drive-shaft, and stuffing tube.
+They are in turn mounted to the floor of the rear compartment.
 
 .. _escs:
 
@@ -87,9 +136,6 @@ ESCs are found in the rear compartment of the boat.
 Left/Right Reverse Pair of Propellers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The propeller with part number that ends in "L", e.g. 2317.51L is a reverse pitch propeller.
-It is mounted to the left (port) side drive train.
-
 When the propeller turns, in converts motor torque into forward or backward thrust.
 The direction of the pitch determines if the thrust is forward or backward for a clockwise rotation.
 
@@ -99,6 +145,18 @@ This reaction causes the boat to try to bank to the side.
 If the boat used two propellers that had the same pitch (instead of the reverse pair), 
 the boat would bank sharply whenever you tried to thrust forward.
 But if the boat has a reverse pair, the reaction torque from both propellers cancels each other out, and the boat will drive straight.
+
+The most commonly used propeller is the [INFO ABOUT PROPS]
+
+The propeller with part number that ends in "L", e.g. 2317.51L is a reverse pitch propeller.
+It is mounted to the left (port) side drive train.
+
+.. _air_fan:
+
+Airfan Assembly
+^^^^^^^^^^^^^^^
+
+[a "lazy susan" base that rotates the heading of the fan to create "vectored thrust"]
 
 
 .. _cooling_loop:
@@ -116,17 +174,29 @@ The heat exchanger is the small aluminum tube on the underside of the boat.
 WiFi Router
 ^^^^^^^^^^^
 
-Ubiquiti bullet.
+Each boat contains a WiFi router that generates a network that allows 
+the phone and tablet to connect.
+
+The most commonly used router is the Ubiquiti bullet.
 
 .. _cable_harness_and_breaker:
 
 Cable Harness and Breaker
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-80 amp breaker
+The cable harness refers to the bundle of cables that run between 
+the rear and front compartments in the boat.
+The battery plugs into the XT90 connector.
 
+The 80 amp breaker is an important part of the harness.
+This breaker will open if more than 80 amps is drawn through the harness.
+The :ref:`ESCs <escs>` are not meant to draw more than 80 amps.
 
+:ref:`Top of this page <equipment>`
 
+:ref:`Back to the index <index>`
+
+.. _phone_and_tablet:
 
 Phone and Tablet
 ----------------
@@ -135,14 +205,10 @@ Phone and Tablet
 * USB between phone and arduino
 * tablet
 
-:ref:`Top of this page <equipment>`
-
-:ref:`Back to the index <index>`
-
 .. _rc_equipment:
 
-RC control
-----------
+RC Equipment
+------------
 
 .. _rc_transmitter:
 
@@ -158,6 +224,7 @@ FrSky X8R
 
 :ref:`Back to the index <index>`
 
+.. _bluebox_and_sensors:
 
 BlueBox and Sensors
 -------------------
@@ -186,12 +253,20 @@ BlueBox
 
 asdf
 
+:ref:`Top of this page <equipment>`
+
+:ref:`Back to the index <index>`
+
 .. _bluebox_power_switch:
 
 BlueBox power switch
 ^^^^^^^^^^^^^^^^^^^^
 
 asdf
+
+:ref:`Top of this page <equipment>`
+
+:ref:`Back to the index <index>`
 
 .. _bluebox_voltage_regulator:
 
@@ -200,7 +275,16 @@ BlueBox voltage regulator
 
 asdf
 
-.. 
+:ref:`Top of this page <equipment>`
+
+:ref:`Back to the index <index>`
+
+.. _bluebox_gps:
+
+BlueBox GPS receiver
+^^^^^^^^^^^^^^^^^^^^
+
+asdf
 
 :ref:`Top of this page <equipment>`
 
@@ -208,15 +292,31 @@ asdf
 
 
 
-Platypus water sampler
-----------------------
+.. _platypus_sampler:
+
+Platypus Sampler
+----------------
+
+This device allows the boat to collect jars of surface water.
+It is mounted on top of the rear plate, thus it can only be used
+with a special rear plate and a propeller boat.
+
+* There are four jars.
+* Each jar holds 500 mL (for a total of 2 L), and each jar is fitted with its own tubing.
+* Each tube is installed on its own peristaltic pump.
+* It takes approximately 4 minutes to fill a jar.
+
+The jars can be individually :ref:`activated with the tablet<operating_the_sampler>` 
+or :ref:`triggered autonomously<autonomous_triggers>`.
+
 
 :ref:`Top of this page <equipment>`
 
 :ref:`Back to the index <index>`
 
+.. _personal_genomics:
 
-Personal Genomics water filtration
+Personal Genomics Water Filtration
 ----------------------------------
 
 * stepper motor

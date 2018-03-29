@@ -41,8 +41,7 @@ Troubleshooting
 * :ref:`airfan_weak_but_loud`
 * :ref:`lipo_is_puffy`
 * Oops, a wire came loose or I damaged ___
-* Blueblox data does not appear in WAIS/web app (bluebox may not have GPS fix or SIM card connection)
-* Data is not appearing in WAIS/web app
+* :ref:`data_not_in_wais`
 
 
 .. _boat_will_not_turn_on:
@@ -494,11 +493,13 @@ An issue [WILL BE] logged with MapBox to address this bug.
 
 .. _boat_will_not_start_waypoints:
 
-Boat will not start navigating toward waypoints
------------------------------------------------
+Boat will not start navigating toward waypoints or respond to thumbstick
+-------------------------------------------------------------------------
 
-In the upper-left corner of the tablet, you can see the "Waypoint Status".
-If that shows "GOING", but the boat is not moving, make sure that the :ref:`RC override is turned off<rc_override>`.
+Make sure that the :ref:`RC override is turned off<rc_override>`.
+
+Turning the RC transmitter off does *NOT* automatically turn off the override.
+That must be manually turned off while the transmitter is connected to the receiver.
 
 :ref:`Top of this page <troubleshooting>`
 
@@ -634,6 +635,23 @@ It is difficult to say what voltage this occurs at, how long a battery's lifetim
 In any case, a healthy LiPo battery feels firm if you squeeze it.
 If the LiPo battery has become puffy and feels squishy if you squeeze it, 
 do *NOT* continue using it.
+
+:ref:`Top of this page <troubleshooting>`
+
+:ref:`Back to the index <index>`
+
+.. _data_not_in_wais:
+
+BlueBox data does not appear in WAIS web app
+--------------------------------------------
+
+Make sure that the :ref:`BlueBox is turned on<blueboxswitch>`.
+
+Try using BlueGate to see if any data is being sent over the 3G network.
+
+Verify that the WAIS campaign time window matches would include the timestamp in the BlueBox.
+
+Lastly, if all of the above are working correctly, check if the :ref:`bluebox_gps` has a fix.
 
 :ref:`Top of this page <troubleshooting>`
 

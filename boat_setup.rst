@@ -314,7 +314,7 @@ Push down on the plate near each rotating tab as you rotate the tab over the pla
 .. _tighten_airfan_bolts:
 
 Tighten airfan assembly bolts
------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If you are using an airboat, make sure that the bolts at the bottom of the fan assembly are tight.
 Fan vibration causes them to loosen frequently, and they should be checked before each deployment.

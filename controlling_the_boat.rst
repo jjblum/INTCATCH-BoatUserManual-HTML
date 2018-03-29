@@ -3,8 +3,12 @@
 Controlling the Boat
 ====================
 
-Tablet app layout
------------------
+Using the Tablet Application
+----------------------------
+
+[SHOULD THIS JUST POINT OUT THE HELP-MODE?]
+[NO NEED TO REPEAT IT ALL IF THE APP DOES IT FOR YOU]
+
 
 * tablet help mode button
 * left panel control
@@ -32,7 +36,7 @@ Tablet app layout
 :ref:`Back to the index <index>`
 
 Waypoints
----------
+^^^^^^^^^
 
 * creating, removing, and moving waypoints
 * straight paths
@@ -44,6 +48,13 @@ Waypoints
 * speed options
 * manual PID adjustment
 * tips for tablet thumbstick teleop
+
+.. _operating_the_sampler:
+
+Operating the sampler
+^^^^^^^^^^^^^^^^^^^^^
+
+asdf
 
 .. _manual_pid_tuning:
 
@@ -64,7 +75,7 @@ RC manual teleoperation
 .. _rc_override:
 
 Override
-^^^^^^^^^^^
+^^^^^^^^
 
 .. raw:: html
 
@@ -105,6 +116,15 @@ Thrust and Rudder
 
 :ref:`Back to the index <index>`
 
+
+.. _operating_the_pg_filtering:
+
+Operating the Personal Genomics filtering system
+------------------------------------------------
+
+asdf
+
+.. _autonomous_triggers:
 
 Autonomous triggers
 -------------------
