@@ -1,4 +1,4 @@
-.. _boatsetup:
+.. _boat_setup:
 
 Boat Setup
 ==========

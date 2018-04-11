@@ -39,6 +39,7 @@ Troubleshooting
 * :ref:`boat_broken_prop`
 * :ref:`airfan_assembly_will_not_turn`
 * :ref:`airfan_weak_but_loud`
+* :ref:`airboat_hard_to_steer`
 * :ref:`lipo_is_puffy`
 * Oops, a wire came loose or I damaged ___
 * :ref:`data_not_in_wais`
@@ -623,6 +624,41 @@ If it is reversed, flip the airfan assembly around and :ref:`reverse the motor's
 :ref:`Top of this page <troubleshooting>`
 
 :ref:`Back to the index <index>`
+
+.. _airboat_hard_to_steer:
+
+Airboat is hard to manually steer 
+---------------------------------
+
+The airboat is much more difficult to control by hand.
+If conditions allow it, autonomous navigation is highly recommended for the airboat.
+
+The boats tend to "drift", continuing their last thrust action, for a significant amount of time.
+Imagine that you are turning the boat in place, 
+then let go of the thrust - the boat will continue to spin for a little bit.
+
+Thus, it is very easy to overshoot.
+You need to anticipate this overshoot, and in some cases, 
+actively thrust the opposite direction to prevent it.
+
+Again, imagine you are turning the boat in place.
+As you approach the heading you want to stop at,
+turn the fan all the way in the opposite direction and thrust for a short burst.
+This will stop the drifting rotation, ending the turn with the desired heading.
+
+This "feedforward" anticipatory control is not intuitive,
+thus you will likely need more practice controlling the airboat manually.
+With practice, you will be able to identify when the boat is starting to 
+rotate too far and counteract it.
+
+Therefore, it is recommended that you learn to steer the airboat
+on a calm lake or pond deployment before a challenging deployment,
+such as the flowing water in a stream or river.
+
+:ref:`Top of this page <troubleshooting>`
+
+:ref:`Back to the index <index>`
+
 
 .. _lipo_is_puffy:
 

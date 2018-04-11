@@ -6,7 +6,19 @@ After Deploying
 Shutdown sequence
 -----------------
 
-* TODO
+You will be repeating or performing the opposite actions taken 
+during the :ref:`boat setup<boat_setup>`.
+
+#. Remove boat from water
+#. Make sure propellers won't turn on accidentally
+#. Wipe excess water off of lid
+#. Open lid
+#. Turn off BlueBox
+#. Unplug phone
+#. Turn off phone app (swipe right to left)
+#. Turn off eboard
+#. Remove battery
+#. Close the lid
 
 Storing the boat
 ----------------
@@ -15,7 +27,6 @@ Storing the boat
 * Leave back compartment ajar to air it out in case of small leaks
 * Sensor care
 	* pH buffer solution
-	* etc.
 
 
 :ref:`Back to the index <index>`

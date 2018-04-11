@@ -46,6 +46,10 @@ The hull is:
 * Filled with flotation foam, minimizing the impact of a hull leak
 * Light enough to carry under-arm
 
+:ref:`Top of this page <equipment>`
+
+:ref:`Back to the index <index>`
+
 .. _white_housing:
 
 INTCATCH White Housing
@@ -59,6 +63,10 @@ required for this integration.
 Nicknamed the "white housing", it is installed on top of front boat compartment,
 replacing the acrylic plate used in the base Platypus product.
 
+:ref:`Top of this page <equipment>`
+
+:ref:`Back to the index <index>`
+
 .. _sensor_mount:
 
 INTCATCH Sensor Mount
@@ -66,6 +74,10 @@ INTCATCH Sensor Mount
 
 This two-piece frame allows the sensors to be mounted to the underside of the boat.
 The bottom piece can be removed, allowing direct access to the sensor probes.
+
+:ref:`Top of this page <equipment>`
+
+:ref:`Back to the index <index>`
 
 .. _lipo_battery:
 
@@ -84,6 +96,9 @@ The most commonly used battery is the Turnigy Multistar 4S, 16 Ah, 10C battery.
 .. image:: _static/images/battery.jpg
    :alt: battery
 
+:ref:`Top of this page <equipment>`
+
+:ref:`Back to the index <index>`
 
 .. _eboard_and_arduino:
 
@@ -100,10 +115,12 @@ The :ref:`ESCs <escs>` are controlled with the 3-wire cables attached to the e-b
 It is important to note that there are two revisions of the e-board.
 Platypus revised their e-board design during the course of INTCATCH, 
 thus both types are used in the first 10 prototype boats.
+
 The older design is larger, uses yellow XT60 connectors, and requires external cables to connect to the BlueBox and RC receiver.
-The newer design is smaller, uses only red/black pairs of 45-amp Anderson Power Pole connectors, and uses internal cables to connect to the bluebox and RC receiver.
 
 [IMAGE: OLD EBOARD]
+
+The newer design is smaller, uses only red/black pairs of 45-amp Anderson Power Pole connectors, and uses internal cables to connect to the bluebox and RC receiver.
 
 [IMAGE: NEW EBOARD]
 
@@ -121,6 +138,12 @@ This term refers to the Platypus modular drivetrain in the rear compartment of p
 There are two frames that mount a motor, simple gearing, drive-shaft, and stuffing tube.
 They are in turn mounted to the floor of the rear compartment.
 
+[PICTURE HILIGHTING POWERPOD]
+
+:ref:`Top of this page <equipment>`
+
+:ref:`Back to the index <index>`
+
 .. _escs:
 
 Electronic Speed Controllers (ESCs)
@@ -130,6 +153,12 @@ ESCs control the speed of the boat's motors.
 They pull power from the battery according to the signals sent to them by the :ref:`e-board <eboard_and_arduino>`.
 Each motor has its own ESC. The propeller boat has 2 ESCs, and the airboat has 1.
 ESCs are found in the rear compartment of the boat.
+
+[PICTURE HILIGHTING ESC]
+
+:ref:`Top of this page <equipment>`
+
+:ref:`Back to the index <index>`
 
 .. _reverse_pair_props:
 
@@ -151,13 +180,30 @@ The most commonly used propeller is the [INFO ABOUT PROPS]
 The propeller with part number that ends in "L", e.g. 2317.51L is a reverse pitch propeller.
 It is mounted to the left (port) side drive train.
 
+[PICTURE HILIGHTING PROPS REVERSE PAIR]
+
+:ref:`Top of this page <equipment>`
+
+:ref:`Back to the index <index>`
+
 .. _air_fan:
 
 Airfan Assembly
 ^^^^^^^^^^^^^^^
 
-[a "lazy susan" base that rotates the heading of the fan to create "vectored thrust"]
+The Platypus airfan uses a 10-inch diameter propeller and a 
+Great Planes Rimfire .15 motor.
 
+The fan rotates on a lazy-susan bearing, with a small servo powering this rotation.
+The extra cable that must be plugged into the :ref:`e-board<eboard_and_arduino>` controls this servo.
+
+This rotating fan generates "vectored" thrust.
+Depending on the angle of rotation, the thrust will be split between
+forward/backward and port/starboard.
+
+:ref:`Top of this page <equipment>`
+
+:ref:`Back to the index <index>`
 
 .. _cooling_loop:
 
@@ -166,8 +212,14 @@ Cooling Loop
 
 There is a closed-loop cooling system in the boats, powered by a small pump.
 The :ref:`ESCs <escs>` and power pod motors are cooled.
+
 The heat exchanger is the small aluminum tube on the underside of the boat.
 
+The small plastic bottle in the rear compartment is the cooling fluid resevoir.
+
+:ref:`Top of this page <equipment>`
+
+:ref:`Back to the index <index>`
 
 .. _wifi_router:
 
@@ -178,6 +230,10 @@ Each boat contains a WiFi router that generates a network that allows
 the phone and tablet to connect.
 
 The most commonly used router is the Ubiquiti bullet.
+
+:ref:`Top of this page <equipment>`
+
+:ref:`Back to the index <index>`
 
 .. _cable_harness_and_breaker:
 
@@ -201,24 +257,59 @@ The :ref:`ESCs <escs>` are not meant to draw more than 80 amps.
 Phone and Tablet
 ----------------
 
-* phone
-* USB between phone and arduino
-* tablet
+The typical phone is a Nexus 5X. It has a USB-C port.
+
+There is not a standard tablet, 
+but one with a large screen is preferred.
+The ASUS ZenPad 10 is a good example.
 
 .. _rc_equipment:
 
 RC Equipment
 ------------
 
+The radio control (RC) equipment provides an easier method for
+manually steering the boat.
+The large, tactile controls are easier to use than the tablet app's thumbstick.
+
+A user can switch back and forth between autonomy and manual steering with a single switch.
+
+It also provides a dead-stop switch that can be used to cut off
+autonomous navigation. 
+
+The RC is independent of the WiFi connection used between
+the boat's phone and the tablet. It provides redundancy - if the
+WiFi or phone fails, the user can still control the boat via the RC.
+
 .. _rc_transmitter:
 
 FrSky Taranis X9D Plus
 ^^^^^^^^^^^^^^^^^^^^^^
 
+This transmitter has 16 channels, uses the SBUS protocol, and has model matching.
+
+"Model matching" refers to being able bind specific receivers to a unique "model".
+
+This allows you to switch between different receivers on the fly.
+While you can still only control one boat at a time, you can easily switch
+between them as long as you have bound the receivers to a unique model in the transmitter.
+
 .. _rc_receiver:
 
 FrSky X8R
 ^^^^^^^^^
+
+This receiver comes with its own integrated antennas.
+
+.. _sbus_inversion_cable:
+
+SBUS Inversion Cable
+^^^^^^^^^^^^^^^^^^^^
+
+The SBUS protocol must pass through a circuit that translates it
+into a form that the :ref:`e-board's arduino<eboard_and_arduino>` can use.
+
+This circuit is integrated into the cable connecting the receiver to the arduino.
 
 :ref:`Top of this page <equipment>`
 
