@@ -63,6 +63,9 @@ required for this integration.
 Nicknamed the "white housing", it is installed on top of front boat compartment,
 replacing the acrylic plate used in the base Platypus product.
 
+.. image:: _static/images/white_housing.jpg
+   :alt: white housing
+
 :ref:`Top of this page <equipment>`
 
 :ref:`Back to the index <index>`
@@ -74,6 +77,12 @@ INTCATCH Sensor Mount
 
 This two-piece frame allows the sensors to be mounted to the underside of the boat.
 The bottom piece can be removed, allowing direct access to the sensor probes.
+
+.. image:: _static/images/sensor_mount.jpg
+   :alt: sensor mount
+
+.. image:: _static/images/sensor_mount_plate.jpg
+   :alt: sensor mount plate
 
 :ref:`Top of this page <equipment>`
 
@@ -112,17 +121,19 @@ and handles all of the control signals into and out of the autonomous boat.
 It also supplies power to the boat's WiFi router, cooling loop pump, and the phone.
 The :ref:`ESCs <escs>` are controlled with the 3-wire cables attached to the e-board.
 
+.. image:: _static/images/eboard.jpg
+   :alt: eboard
+
 It is important to note that there are two revisions of the e-board.
 Platypus revised their e-board design during the course of INTCATCH, 
 thus both types are used in the first 10 prototype boats.
 
 The older design is larger, uses yellow XT60 connectors, and requires external cables to connect to the BlueBox and RC receiver.
 
-[IMAGE: OLD EBOARD]
-
 The newer design is smaller, uses only red/black pairs of 45-amp Anderson Power Pole connectors, and uses internal cables to connect to the bluebox and RC receiver.
 
-[IMAGE: NEW EBOARD]
+.. image:: _static/images/eboard_old_vs_new.jpg
+   :alt: old and new e-boards
 
 
 :ref:`Top of this page <equipment>`
@@ -138,7 +149,8 @@ This term refers to the Platypus modular drivetrain in the rear compartment of p
 There are two frames that mount a motor, simple gearing, drive-shaft, and stuffing tube.
 They are in turn mounted to the floor of the rear compartment.
 
-[PICTURE HILIGHTING POWERPOD]
+.. image:: _static/images/powerpods.jpg
+   :alt: power pods
 
 :ref:`Top of this page <equipment>`
 
@@ -154,7 +166,8 @@ They pull power from the battery according to the signals sent to them by the :r
 Each motor has its own ESC. The propeller boat has 2 ESCs, and the airboat has 1.
 ESCs are found in the rear compartment of the boat.
 
-[PICTURE HILIGHTING ESC]
+.. image:: _static/images/escs.jpg
+   :alt: ESCs
 
 :ref:`Top of this page <equipment>`
 
@@ -180,7 +193,8 @@ The most commonly used propeller is the [INFO ABOUT PROPS]
 The propeller with part number that ends in "L", e.g. 2317.51L is a reverse pitch propeller.
 It is mounted to the left (port) side drive train.
 
-[PICTURE HILIGHTING PROPS REVERSE PAIR]
+.. image:: _static/images/reverse_prop_pair.jpg
+   :alt: reverse propeller pair
 
 :ref:`Top of this page <equipment>`
 
@@ -201,6 +215,9 @@ This rotating fan generates "vectored" thrust.
 Depending on the angle of rotation, the thrust will be split between
 forward/backward and port/starboard.
 
+.. image:: _static/images/airfan_assembly.jpg
+   :alt: airfan assembly
+
 :ref:`Top of this page <equipment>`
 
 :ref:`Back to the index <index>`
@@ -211,11 +228,18 @@ Cooling Loop
 ^^^^^^^^^^^^
 
 There is a closed-loop cooling system in the boats, powered by a small pump.
+
 The :ref:`ESCs <escs>` and power pod motors are cooled.
 
 The heat exchanger is the small aluminum tube on the underside of the boat.
 
 The small plastic bottle in the rear compartment is the cooling fluid resevoir.
+
+.. image:: _static/images/pump.jpg
+   :alt: cooling loop pump
+
+.. image:: _static/images/resevoir.jpg
+   :alt: cooling loop resevoir
 
 :ref:`Top of this page <equipment>`
 
@@ -230,6 +254,9 @@ Each boat contains a WiFi router that generates a network that allows
 the phone and tablet to connect.
 
 The most commonly used router is the Ubiquiti bullet.
+
+.. image:: _static/images/router.jpg
+   :alt: WiFi router
 
 :ref:`Top of this page <equipment>`
 
@@ -247,6 +274,9 @@ The battery plugs into the XT90 connector.
 The 80 amp breaker is an important part of the harness.
 This breaker will open if more than 80 amps is drawn through the harness.
 The :ref:`ESCs <escs>` are not meant to draw more than 80 amps.
+
+.. image:: _static/images/breaker.jpg
+   :alt: circuit breaker
 
 :ref:`Top of this page <equipment>`
 
@@ -294,12 +324,18 @@ This allows you to switch between different receivers on the fly.
 While you can still only control one boat at a time, you can easily switch
 between them as long as you have bound the receivers to a unique model in the transmitter.
 
+.. image:: _static/images/rc_transmitter.jpg
+   :alt: RC transmitter
+
 .. _rc_receiver:
 
 FrSky X8R
 ^^^^^^^^^
 
 This receiver comes with its own integrated antennas.
+
+.. image:: _static/images/rc_receiver.jpg
+   :alt: RC receiver
 
 .. _sbus_inversion_cable:
 
@@ -310,6 +346,9 @@ The SBUS protocol must pass through a circuit that translates it
 into a form that the :ref:`e-board's arduino<eboard_and_arduino>` can use.
 
 This circuit is integrated into the cable connecting the receiver to the arduino.
+
+.. image:: _static/images/rc_sbus_inversion_cable.jpg
+   :alt: SBUS inversion cable
 
 :ref:`Top of this page <equipment>`
 
@@ -399,6 +438,9 @@ with a special rear plate and a propeller boat.
 
 The jars can be individually :ref:`activated with the tablet<operating_the_sampler>` 
 or :ref:`triggered autonomously<autonomous_triggers>`.
+
+.. image:: _static/images/sampler.jpg
+   :alt: sampler
 
 
 :ref:`Top of this page <equipment>`
