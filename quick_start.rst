@@ -4,7 +4,7 @@ Quick Start
 ===========
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 1
 
 quick start! One simple html page with very brief sections
 that summarize many of the other pages.

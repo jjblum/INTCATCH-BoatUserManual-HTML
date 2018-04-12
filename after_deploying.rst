@@ -10,7 +10,7 @@ You will be repeating or performing the opposite actions taken
 during the :ref:`boat setup<boat_setup>`.
 
 #. Remove boat from water
-#. Make sure propellers won't turn on accidentally
+#. Make sure propellers won't turn on accidentally - stop autonomy and secure the RC transmitter
 #. Wipe excess water off of lid
 #. Open lid
 #. Turn off BlueBox

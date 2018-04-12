@@ -229,7 +229,7 @@ Cooling Loop
 
 There is a closed-loop cooling system in the boats, powered by a small pump.
 
-The :ref:`ESCs <escs>` and power pod motors are cooled.
+The :ref:`ESCs <escs>` and :ref:`power pod<power_pods>` motors are cooled.
 
 The heat exchanger is the small aluminum tube on the underside of the boat.
 
