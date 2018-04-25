@@ -15,7 +15,7 @@ Troubleshooting
 * :ref:`escs_run_hot`
 * :ref:`find_water_in_rear`
 * :ref:`boat_wifi_never_appears`
-* don't remember password to boat WiFi
+* TODO don't remember password to boat WiFi
 * :ref:`bluebox_will_not_turn_on`
 * :ref:`tablet_will_not_connect_to_phone`
 * :ref:`tablet_crashes_when_connect_to_boat`
@@ -31,7 +31,7 @@ Troubleshooting
 * :ref:`tablet_map_does_not_load`
 * :ref:`tablet_map_tiles_lack_water_details`
 * :ref:`tablet_map_unloads_tiles`
-* Sensor ___ is not working
+* TODO Sensor ___ is not working
 * :ref:`rc_does_not_work`
 * :ref:`boat_will_not_start_waypoints`
 * :ref:`propellers_turn_in_wrong_direction`
@@ -41,7 +41,8 @@ Troubleshooting
 * :ref:`airfan_weak_but_loud`
 * :ref:`airboat_hard_to_steer`
 * :ref:`lipo_is_puffy`
-* Oops, a wire came loose or I damaged ___
+* TODO Sampler jar does not start - try resetting first
+* TODO Oops, a wire came loose or I damaged ___
 * :ref:`data_not_in_wais`
 
 
@@ -479,7 +480,9 @@ After caching, make sure the tablet is not connected to the internet.
 Then navigate to the location and zoom level you cached.
 If this bug is occurring, the map will rapidly unload tiles and lose details until it looks as if you never cached the map at all.
 
-To fix this, you will need to first connect the tablet to an internet connection. Then:
+To fix this, 
+
+#. Connect the tablet to the internet
 #. Navigate to the Android OS application settings (Settings -> Apps -> Platypus control app)
 #. Press the button to clear data.
 #. Uninstall the app.

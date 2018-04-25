@@ -287,10 +287,12 @@ The :ref:`ESCs <escs>` are not meant to draw more than 80 amps.
 Phone and Tablet
 ----------------
 
-The typical phone is a Nexus 5X. It has a USB-C port.
+The phone must be an Android phone, with Android 7.0 or newer. 
+The typical phone is a Nexus 5X. 
+It has a USB-C port.
 
-There is not a standard tablet, 
-but one with a large screen is preferred.
+The tablet must be an Android tablet, with Android 6.0 or newer. 
+A 10 inch screen is preferred. 
 The ASUS ZenPad 10 is a good example.
 
 .. _rc_equipment:

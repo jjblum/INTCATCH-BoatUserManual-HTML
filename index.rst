@@ -34,10 +34,6 @@ INTCATCH boat user manual
 * :ref:`search`
 
 
-
-
-
-
 ..
 	Indices and tables
 	==================
