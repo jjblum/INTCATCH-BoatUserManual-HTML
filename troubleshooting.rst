@@ -214,6 +214,13 @@ The world map should appear, replacing the large black background.
 From this point on, the app should work as normal. 
 Then an internet connection is only required for :ref:`caching new map tiles <cache_map_tiles>`.
 
+If the tablet uses Android 7.0, in some cases you will be unable to use
+a connection if it does not use a CA certificate 
+(e.g. the "eduroam" WiFi commonly found on university campuses).
+This is due to an operating system level SSL encryption handshake issue.
+If the tablet is connected to the internet, but the tablet app never loads
+any tiles, you will need to use an alternative internet connection!
+
 :ref:`Top of this page <troubleshooting>`
 
 :ref:`Back to the index <index>`
@@ -537,7 +544,7 @@ Propellers turn in the wrong direction
 Five things control the direction of the thrust provided by a propeller.
 
 #. The control signal sent to the :ref:`ESC<escs>`, which ranges between -1 and 1.
-#. Which control signal is being sent to the starboard ESC vs. the signal sent to the port ESC.
+#. Which control signal is being sent to the right (starboard) ESC vs. the signal sent to the left (port) ESC.
 #. The direction the motor turns when the control signal is positive or negative, the "phase" of the motor.
 #. :ref:`The pitch of the propeller blades<reverse_pair_props>` - this determines a forward or backward thrust for a given rotation direction.
 #. The vehicle type listed in the :ref:`phone app options<phoneoptions>`.
@@ -549,7 +556,7 @@ During each test, place your hand behind the propellers and feel for air pushed 
 If the propeller is pulling air, you will not feel it.
 
 * Test 1: thrust forward. If a propeller does not push air backwards, the motor is out of phase or the reverse pair is backwards. Open the rear compartment and :ref:`reverse the motor phase<switch_motor_phase>`.
-* Test 2: turn left. The left propeller should suck air, and the right propeller should push air backwards. If the reverse is true, switch the 3-wire cables on the e-board.
+* Test 2: turn left. The left propeller should suck air, and the right propeller should push air backwards. If the reverse is true, switch the 3-wire cables on the :ref:`e-board<eboard_and_arduino>`.
 * Test 3: turn right. If you have completed Test 1 and 2 correctly, the left propeller should push air, and the right should pull air.
 
 If only one of the motors runs, it is possible that you have the vehicle type set to vectored, i.e. an airboat.

@@ -184,20 +184,37 @@ See :ref:`here<tablet_crashes_when_connect_to_boat>` for more detail.
 Reverse a motor's phase
 -----------------------
 If a motor is receiving the correct control signals, but is
-:ref:`spinning in the wrong direction<propellers turn in wrong direction>`,
+:ref:`spinning in the wrong direction<propellers_turn_in_wrong_direction>`,
 you can fix that by switching any two of the three wire connections.
+
+You can do this while the boat is powered on, as long as you are not revving the motors.
+
 For example, if the starting configuration is
 
-* Wire 1a <--> Wire 1b
-* Wire 2a <--> Wire 2b
-* Wire 3a <--> Wire 3b
+* Wire 1 <--> Blue
+* Wire 2 <--> Yellow
+* Wire 3 <--> Orange
 
 switch two wires so that the new configuration is
 
-* Wire 1a <--> *Wire 2b*
-* Wire 2a <--> *Wire 1b*
-* Wire 3a <--> Wire 3b
+* Wire 1 <--> *Yellow*
+* Wire 2 <--> *Blue*
+* Wire 3 <--> Orange
+
+.. image:: _static/images/motor_wires.jpg
+   :alt: motor wires
 
 :ref:`Top of this page <before_deploying>`
 
 :ref:`Back to the index <index>`
+
+.. _manually_preparing_paths:
+
+Manually preparing and uploading waypoints
+------------------------------------------
+
+TODO
+
+Waypoints folder
+
+JSON format of waypoints files

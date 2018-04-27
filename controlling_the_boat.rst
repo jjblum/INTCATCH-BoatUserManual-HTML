@@ -30,6 +30,7 @@ Using the Tablet Application
 * map center button
 * advanced options
 	* switching between vector and satellite maps
+	* saving and loading waypoint files and paths
 
 :ref:`Top of this page <controllingtheboat>`
 
