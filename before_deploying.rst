@@ -218,3 +218,16 @@ TODO
 Waypoints folder
 
 JSON format of waypoints files
+
+.. _default_autonomous_triggers:
+
+Changing the default autonomous triggers
+----------------------------------------
+
+TODO
+
+behaviors folder
+
+JSON format of triggers
+
+Example

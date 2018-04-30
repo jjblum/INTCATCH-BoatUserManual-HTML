@@ -254,6 +254,15 @@ Enter the IP address that appeared at the top of the phone app.
 You do *NOT* need to include the port number.
 For example, if the phone app shows "192.168.1.100:14111", you would use "192.168.1.100" with the tablet app.
 
+Once you attempt to connect to an IP address, it will appear in the :ref:`connection color bar<tablet_connection_bar>`.
+
+If the color changes to green, the connection was successful.
+If the color stays red, do *not* try to create another connection with the same IP!
+Follow the steps :ref:`here<tablet_will_not_connect_to_phone>`.
+
+If you create multiple connections with the same IP, this actually creates redundant connections.
+This could lead to unexpected behavior.
+
 :ref:`Back to the sequence <startupsequence>`
 
 .. _verifytabletdata:

@@ -6,8 +6,8 @@ Controlling the Boat
 There are three ways to control the boat. 
 
 #. :ref:`manually pilot the boat with the RC control<rc_control>`
-#. use the :ref:`tablet control application<using_the_tablet>` to take advantage of autonomous navigation
-#. define autonomous triggers to start behavior when specific conditions are fulfilled
+#. :ref:`use the tablet control application<using_the_tablet>` to take advantage of autonomous navigation
+#. :ref:`define autonomous triggers to start behavior when specific conditions are fulfilled<autonomous_triggers>`
 
 While the RC control may seem simple and intuitive, we recommend the use of autonomy whenever possible.
 A human operator will still need to intervene from time to time, but the majority of the time
@@ -63,11 +63,11 @@ A typical boat deployment will require the following steps:
 
 The GUI has the following additional capabilities:
 
-#. Selecting which boat is currently under control
-#. If you have a sampler, control the sampler
-#. Manual teleoperation of the boat via a thumbstick
-#. Changing the speed of the boat
-#. Changing "advanced options"
+#. :ref:`Selecting which boat is currently under control<tablet_boat_selection>`
+#. :ref:`Changing the speed of the boat<tablet_change_speed>`
+#. :ref:`Manual teleoperation of the boat via a thumbstick<tablet_thumbstick>`
+#. :ref:`If you have a sampler, control the sampler<tablet_sampler>`
+#. :ref:`Changing "advanced options"<tablet_advanced_options>`
 
 :ref:`Top of this page <controllingtheboat>`
 
@@ -118,7 +118,7 @@ Connecting to a boat consists of:
 
 #. :ref:`Press the "Connect to boat" button<tablet_connect_button>`
 #. :ref:`Enter a boat's IP address into the popup dialog<tablet_enter_ip_address>`
-#. Observe the color of the connection status bar
+#. :ref:`Observe the color of the connection status bar<tablet_connection_bar>`
 
 .. _tablet_connect_button:
 
@@ -345,15 +345,25 @@ To load a set of waypoints, you must
 Generating paths from waypoints
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Once you have waypoints in place you have three options for generating paths.
+Once you have waypoints in place you have four options for generating paths.
 
 #. A chain of straight lines through the waypoints
 #. A spiral covering the area surrounded by the waypoints
 #. A zig-zig covering the area surrounded by the waypoints
+#. Changing the transect distance for spirals and zig-zag paths
 
 After you generate the path, the estimated path length is displayed on the left side
 of the GUI, below the path generation buttons.
 This length is measured in meters.
+
+.. image:: _static/images/tablet/generate_paths.jpg
+   :alt: Three types of paths
+
+.. image:: _static/images/tablet/path_length.jpg
+   :alt: Estimated path length
+
+.. image:: _static/images/tablet/path_types.jpg
+   :alt: Types of paths
 
 .. _tablet_straight_path:
 
@@ -368,10 +378,42 @@ The boat will travel in straight lines between each waypoint.
 Spiral path
 """""""""""
 
+Instead of traveling directly through the waypoints, we can use them to define a convex polygon.
+This polygon represents an area that we want to completely cover with line segments.
+
+This kind of path requires at least 3 waypoints.
+
+A spiral should maximize the time spent traveling forward, efficiently covering the area.
+
 .. _tablet_zigzag_path:
 
 Zig-zag path
 """"""""""""
+
+A zig-zag is similar to a spiral, in that we use the waypoints to define an area we want to cover.
+
+Perhaps we want to have parallel lines of data (also called "transects"). 
+In that case, use a zig-zag path to travel in parallel East-West lines.
+
+This kind of path requires at least 3 waypoints.
+
+.. _tablet_transect_distance:
+
+Changing transect distance
+""""""""""""""""""""""""""
+
+A user can tap on the currently displayed transect distance to change the value.
+After typing in a new value, re-generate the path.
+
+This value represents the distance *between* each transect.
+If you want to tightly cover an area, use a smaller number.
+If you want to loosely cover an area, use a larger number.
+
+Be careful using a small value over a large area! You may overload the tablet's processor.
+
+.. image:: _static/images/tablet/transect_distance.jpg
+   :alt: Transect distance
+
 
 :ref:`Top of this page <controllingtheboat>`
 
@@ -383,7 +425,17 @@ Zig-zag path
 Starting, pausing, and stopping autonomous navigation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-asdf
+Once you have a path ready to be assigned to a boat, you can start the autonomous navigation
+by pressing the start button. The path will change color to match the boat marker's color.
+
+If you want to pause the autonomous navigation, press the pause button. 
+To resume, press the button again.
+
+To stop the autonomous navigation, press the stop button. 
+This will also remove the path and waypoints.
+
+.. image:: _static/images/tablet/start_pause_stop.jpg
+   :alt: Start, pause, and stop autonomous navigation buttons
 
 :ref:`Top of this page <controllingtheboat>`
 
@@ -451,6 +503,299 @@ This prevents stale data from misleading a user.
 :ref:`Back to the index <index>`
 
 
+.. _tablet_boat_selection:
+
+Selecting the current boat
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The GUI can maintain connections to multiple boats at the same time.
+All the buttons and commands will be applied to the currently selected boat.
+
+You can switch the currently selected boat by tapping the "Selected boat" pulldown menu and
+tapping the boat number. The color shown here will match the boat marker's color.
+
+Selecting a new boat will also update the following, as the tablet starts listening to a new source:
+
+* battery voltage
+* waypoint status
+* ip address
+* connection status
+* sensor data
+
+.. image:: _static/images/tablet/selected_boat.jpg
+   :alt: Currently selected boat
+
+.. image:: _static/images/tablet/boat_arrows_and_selection.jpg
+   :alt: Matching colors
+
+:ref:`Top of this page <controllingtheboat>`
+
+:ref:`Back to the index <index>`
+
+
+.. _tablet_change_speed:
+
+Changing the boat's speed
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+There are 4 settings for the speed of the boat:
+
+#. Slow
+#. Medium
+#. Fast
+#. Custom
+
+The first three represent a preset of control parameters that have been tuned for each type of vehicle.
+In almost all cases, a user should only use these three settings.
+Manual PID tuning should only be done by expert user!
+
+The "Custom" setting uses the manually selected values in the Advanced Options -> Preferences menu.
+
+You select these options by using the pulldown menu on the left of the GUI.
+
+.. image:: _static/images/tablet/boat_speed.jpg
+   :alt: Speed selection
+
+
+:ref:`Top of this page <controllingtheboat>`
+
+:ref:`Back to the index <index>`
+
+
+.. _tablet_thumbstick:
+
+Manually piloting with GUI thumbstick
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+You can manually pilot a boat with the thumbstick in the lower right corner of the GUI.
+
+This functions similarly to the :ref:`RC transmitter's right stick<rc_thrust_and_rudder>`,
+although it is more difficult to use.
+
+The recommended technique is to place the thumb in the center and *roll* the tip of the thumb.
+If you slide your thumb, it is very easy to lose your place and be unable to steer without looking.
+By rolling the thumb instead, you always maintain a "home" position for your thumb.
+
+The signal envelope for the thrust and rudder directions can be set in Advanced Options -> Preferences.
+This is similar to the :ref:`RC transmitter's left stick<rc_throttle>`.
+
+.. image:: _static/images/tablet/thumbstick.jpg
+   :alt: GUI thumbstick
+
+:ref:`Top of this page <controllingtheboat>`
+
+:ref:`Back to the index <index>`
+
+
+.. _tablet_sampler:
+
+Controlling the Platypus sampler
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The :ref:`sampler<platypus_sampler>` is controlled by the 6 buttons in the lower-left corner of the GUI.
+
+Starting a jar
+""""""""""""""
+
+You can start individual jars, stop all jars, and reset the sampler's current jar index.
+
+To start jar, press the corresponding numbered button. 
+A timer will appear below the button and start to count down 4 minutes, the time required to fill a jar.
+
+.. image:: _static/images/tablet/start_jars.jpg
+   :alt: Start sampler jar buttons
+
+Stopping all jars
+"""""""""""""""""
+
+Pressing and holding the stop button for ~ 1 second will cause all jars to stop and clear all currently
+executing jar timers. You will need to reset the sampler after doing this.
+
+.. image:: _static/images/tablet/stop_jars.jpg
+   :alt: Stop sampler button
+
+Resetting the sampler
+"""""""""""""""""""""
+
+The sampler keeps track of which jars have been started.
+This prevents a user from accidentally pumping into the same jar twice.
+To reset this, press and hold the reset button for ~ 1 second.
+
+.. image:: _static/images/tablet/reset_jars.jpg
+   :alt: Reset sampler button
+
+
+:ref:`Top of this page <controllingtheboat>`
+
+:ref:`Back to the index <index>`
+
+
+.. _tablet_advanced_options:
+
+Advanced Options
+^^^^^^^^^^^^^^^^
+
+Pressing the "Advanced Options" button in the upper-right corner of the GUI will
+open a popup menu of the following options:
+
+#. :ref:`tablet_vector_vs_satellite_map`
+#. :ref:`tablet_set_go_home`
+#. :ref:`tablet_send_pids`
+#. :ref:`tablet_save_and_load_waypoints`
+#. :ref:`tablet_snooze_battery_alarms`
+#. :ref:`tablet_set_preferences`
+#. :ref:`tablet_construct_and_send_autonomous_triggers`
+
+.. image:: _static/images/tablet/advanced_options_menu.jpg
+   :alt: Advanced options menu
+
+.. _tablet_vector_vs_satellite_map:
+
+Switch between vector and satellite maps
+""""""""""""""""""""""""""""""""""""""""
+
+These buttons switch the map between using vector graphics or satellite imagery.
+
+.. image:: _static/images/tablet/satellite_vector_map.jpg
+   :alt: Vector and Satellite map selection
+
+.. _tablet_set_go_home:
+
+Set boat home and go home
+"""""""""""""""""""""""""
+
+After pressing the "Set Home" button, tapping on the map will set the boat's home location to that location.
+
+Pressing the "Go Home" button will cause the boat to backtrack along the locations it has been, 
+returning to its home location.
+The boat uses the A\* algorithm to plan its path through the locations it has previously visited.
+
+There is a default home location, so a user does not always have to set the home manually.
+When the boat receives its first autonomous navigation command, it sets its home to its current location.
+
+.. image:: _static/images/tablet/set_and_go_home.jpg
+   :alt: Set and go home buttons
+
+.. _tablet_send_pids:
+
+Manually send PID values
+""""""""""""""""""""""""
+
+Pressing this button will resend the PID values associated with the 
+:ref:`currently selected boat speed option<tablet_change_speed>`.
+
+.. image:: _static/images/tablet/send_pids.jpg
+   :alt: Send PIDs button
+
+.. _tablet_save_and_load_waypoints:
+
+Save and load sets of waypoints
+"""""""""""""""""""""""""""""""
+
+See :ref:`here<tablet_saveload_waypoints>`.
+
+.. _tablet_snooze_battery_alarms:
+
+Snooze battery alarms
+"""""""""""""""""""""
+
+The GUI will trigger two levels of warnings depending on the current battery level and the alarm
+preferences specified in the :ref:`preferences<tablet_preferences_battery_alarm_settings>`.
+
+Pressing this button will snooze the alarms (prevent them from occurring) for a fixed duration of time.
+You should only use this if you are keeping a close eye on the battery levels!
+
+.. image:: _static/images/tablet/snooze_alarms.jpg
+   :alt: Snooze alarms button
+
+.. _tablet_set_preferences:
+
+Set preferences
+"""""""""""""""
+
+Pressing this button will open up another screen with several optional settings
+
+.. image:: _static/images/tablet/preferences.jpg
+   :alt: Preferences button
+
+Aside from the vehicle type setting, these options are usually left at their default values.
+Only expert users should change preferences other than vehicle type!
+
+The following options can be changed:
+
+#. :ref:`Vehicle type<tablet_preferences_vehicle_type>`
+#. :ref:`Joystick range<tablet_preferences_vehicle_type>`
+#. :ref:`Custom PID values<tablet_preferences_custom_pids>`
+#. :ref:`Battery alarm settings<tablet_preferences_battery_alarm_settings>`
+
+.. _tablet_preferences_vehicle_type:
+
+Preferences: vehicle type
+"""""""""""""""""""""""""
+
+This option lets the user select either propboat or airboat.
+The only effect this will have is to change the PID values associated with the default
+slow, medium, and fast speed settings.
+
+.. image:: _static/images/tablet/preferences_vehicle_type.jpg
+   :alt: Preferences: vehicle type
+
+.. _tablet_preferences_joystick_range:
+
+Preferences: joystick range
+"""""""""""""""""""""""""""
+
+A user can change the maximum and minimum values for the thrust and rudder directions of the thumbstick.
+
+The default minimum values are -1.0 and 1.0 for both thrust and rudder.
+
+If you change the thrust min and max values to -0.5 and 0.5 respectively,
+pushing the thumbstick all the way forward will result in only half thrust.
+
+Do *not* forget the negative sign in front of the minimum, or the boat will only be able to thrust forward.
+
+.. image:: _static/images/tablet/preferences_joystick_range.jpg
+   :alt: Preferences: joystick range
+
+.. _tablet_preferences_custom_pids:
+
+Preferences: custom PID values
+""""""""""""""""""""""""""""""
+
+An expert user can change the PID values associated with the "Custom" speed setting.
+
+.. image:: _static/images/tablet/preferences_custom_pids.jpg
+   :alt: Preferences: custom PID values
+
+.. _tablet_preferences_battery_alarm_settings:
+
+Preferences: battery alarm settings
+"""""""""""""""""""""""""""""""""""
+
+These options allow an expert user to select the voltage levels that trigger warnings and alarms in the GUI.
+
+.. image:: _static/images/tablet/preferences_battery_warnings.jpg
+   :alt: Preferences: battery alarm settings
+
+
+.. _tablet_construct_and_send_autonomous_triggers:
+
+Construct and send new autonomous triggers
+""""""""""""""""""""""""""""""""""""""""""
+
+Pressing this button will open up another screen. This screen is currently under construction.
+
+Once completed, it will provide a user interface to construct and send 
+new :ref:`autonomous triggers<autonomous_triggers>` to the boat.
+
+Until this is completed, the user should press the back button to return to the main GUI.
+
+.. image:: _static/images/tablet/autonomy.jpg
+   :alt: Autonomy construction button
+
+:ref:`Top of this page <controllingtheboat>`
+
+:ref:`Back to the index <index>`
 
 
 
@@ -511,14 +856,6 @@ Thrust and Rudder
 
 :ref:`Back to the index <index>`
 
-
-.. _operating_the_pg_filtering:
-
-Operating the Personal Genomics filtering system
-------------------------------------------------
-
-asdf
-
 .. _autonomous_triggers:
 
 Autonomous triggers
@@ -528,6 +865,15 @@ Autonomous triggers
 * return home
 * default behavior file
 * sending new behavior triggers
+
+.. _operating_the_pg_filtering:
+
+Operating the Personal Genomics filtering system
+------------------------------------------------
+
+asdf
+
+
 
 
 :ref:`Top of this page <controllingtheboat>`
