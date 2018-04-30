@@ -23,8 +23,8 @@ INTCATCH boat user manual
    safety
    quick_start
    system_overview   
-   before_deploying
    equipment
+   before_deploying
    boat_setup
    controlling_the_boat
    troubleshooting
