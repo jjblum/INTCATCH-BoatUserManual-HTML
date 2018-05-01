@@ -799,23 +799,32 @@ Until this is completed, the user should press the back button to return to the 
 
 
 
-
-
-
-
-
-
-
-
 .. _rc_control:
 
 RC manual teleoperation
 -----------------------
 
+The radio control (RC) equipment provides an easier method for
+manually steering the boat.
+The large, tactile controls are easier to use than the tablet app's thumbstick.
+
 .. _rc_override:
 
 Override
 ^^^^^^^^
+
+Flipping the override switch will cause the :ref:`arduino<eboard_and_arduino>` to
+ignore commands coming from the autonomous navigation, and instead only respond to
+further RC control signals.
+
+The phone app will continue to send autonomous navigation signals to the arduino, but they are temporarily ignored. 
+For example, lets say the boat is performing a large spiral path, but a fishing boat is in the way.
+You can turn the override on, manually pilot the boat around the fishing boat, turn the
+override off again, and the boat will autonomously return to its original path.
+
+Currently, the only way to turn off the override is to flip the switch back to off.
+Turning the RC transmitter off does *NOT* turn off the override! 
+If you leave the override on and turn off the transmitter, the override will remain on.
 
 .. raw:: html
 
@@ -829,6 +838,15 @@ Override
 Power throttle
 ^^^^^^^^^^^^^^
 
+The left stick of the RC transmitter acts as a power envelope - the value of the left stick
+represents the maximum value that the right stick thrust can achieve.
+
+This is useful if you want to cruise at a fixed speed that is less than maximum.
+Instead of trying to hold the right stick somewhere in between zero and maximum,
+simple set the left stick to the cruising speed and hold the right stick at maximum.
+
+Currently, *only the thrust is affected*! The rudder signals are not throttled.
+
 .. raw:: html
 
    <video width="640" height="480" controls muted> 
@@ -841,6 +859,8 @@ Power throttle
 Thrust and Rudder
 ^^^^^^^^^^^^^^^^^
 
+The right stick controls both the thrust (forward and backward) and rudder (left and right).
+
 .. raw:: html
 
    <video width="640" height="480" controls muted> 
@@ -848,9 +868,37 @@ Thrust and Rudder
      Your browser does not support the video tag.
    </video>
 
+.. _rc_tips:
 
-* right stick thrust and turn on one stick
-* tips for airboat steering
+Tips for RC control
+^^^^^^^^^^^^^^^^^^^
+
+Propboat tips
+"""""""""""""
+
+The throttle only reduces maximum forward thrust. 
+The throttle does not change the power generated when turning.
+Thus, you should be gentle with the left and right motion of the right stick.
+
+Airboat tips
+""""""""""""
+
+The airboat is much harder to steer, as it tends to "drift" more than the propboat.
+
+Imagine turning the airboat in place. 
+As you let go of the thrust stick, the airfan stops producing thrust, but the boat continues spinning.
+If you keep up the thrust for too long, the boat will drift past the direction you wanted.
+
+To hit the direction you want, you actually need to angle the fan assembly the *opposite direction*
+of your turn and give a burst of thrust, acting against the turn's momentum, as you near the desired direction.
+
+To drive in a straight line, you must predict when small instabilities will result in the boat
+drifting into a spin, and gently provide thrust in the opposite direction.
+Consistently driving in straight lines with an airboat will require practice!
+
+
+
+
 
 :ref:`Top of this page <controllingtheboat>`
 
@@ -861,10 +909,166 @@ Thrust and Rudder
 Autonomous triggers
 -------------------
 
-* set home (default home)
-* return home
-* default behavior file
-* sending new behavior triggers
+Autonomous triggers allow the autonomous boat to perform actions once a set of conditions has been fulfilled.
+
+This logic-action pair is referred to as a "behavior".
+Each behavior is defined by five things:
+
+#. A unique name
+#. The action to be performed once the conditions are met
+#. A boolean (True/False) condition requirement, called the "trigger"
+#. The frequency that the trigger is checked for a True/False value
+#. If the behavior is retained or abandoned after the action is performed
+
+A behavior's definition is stored in a JSON format that the phone server application parses.
+
+For example, here is the definition for a behavior named "inacitivty_return_home"::
+
+	inactivity_return_home:
+	{
+		action: return_home,
+		trigger: "^(is_autonomous) & time_since_operator > 60000",
+		interval: 1000,
+		ends: n
+	}
+
+In this example, we want the boat to automatically return home if it has not received any signals from a human
+operator in 60 seconds and it is not autonomously navigating to any waypoints (i.e. it is sitting idle).
+
+The string "return_home" is one of a limited set of strings that name *actions* that the boat can perform.
+
+The strings "is_autonomous" and "time_since_operator" are two 
+of a limited set of strings that name *states* that the boat can take on.
+
+A table of all current actions, states, and their identifying strings will follow below.
+
+The "interval" value is the number of milliseconds between each time the trigger boolean is evaluated as True or False.
+
+The "ends" yes/no value specifies if we continue checking the trigger and possibly performing the action again (ends = no),
+or if we abandon the behavior after the action is performed once (ends = yes).
+
+Possible actions and their identifying strings
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------------------------+--------------------------------------------+
+| String                       |   Action                                   |
++==============================+============================================+
+| return_home                  | Navigate to home location                  |
++------------------------------+--------------------------------------------+
+| start_sampler                | Begin filling lowest available jar         |
++------------------------------+--------------------------------------------+
+| sampler_stop                 | Stop filling any jars                      |
++------------------------------+--------------------------------------------+
+| sampler_reset                | Reset the status of the sampler jars       |
++------------------------------+--------------------------------------------+
+
+This list can be expanded by updating the phone app to include new actions.
+
+Possible states and their identifying strings
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
++------------------------------+----------------------------------------------------------+
+| String                       |   State                                                  |
++==============================+==========================================================+
+| EC                           | Electrical conductivity                                  |
++------------------------------+----------------------------------------------------------+
+| DO                           | Dissolved Oxygen                                         |
++------------------------------+----------------------------------------------------------+
+| T                            | Temperature                                              |
++------------------------------+----------------------------------------------------------+
+| PH                           | pH                                                       |
++------------------------------+----------------------------------------------------------+
+| GPS @ [X, Y]                 | Boat is within 3 meters of latitude,longitude = X, Y     |
++------------------------------+----------------------------------------------------------+
+| elapsed_time                 | milliseconds since the phone app started                 |
++------------------------------+----------------------------------------------------------+
+| time_since_operator          | milliseconds since the last operator heartbeat           |
++------------------------------+----------------------------------------------------------+
+| battery_voltage              | boat battery voltage                                     |
++------------------------------+----------------------------------------------------------+
+| is_connected                 | True if the boat is connected to the tablet              |
++------------------------------+----------------------------------------------------------+
+| is_autonomous                | True if the boat is currently navigating autonomously    |
++------------------------------+----------------------------------------------------------+
+| has_first_autonomy           | True if the boat has navigated autonomously at least once|
++------------------------------+----------------------------------------------------------+
+| is_going_home                | True if the boat is currently going home                 |
++------------------------------+----------------------------------------------------------+
+| is_taking_sample             | True if the sampler is currently gathering a sample      |
++------------------------------+----------------------------------------------------------+
+| jars_available               | True if the sampler still has open jars                  |
++------------------------------+----------------------------------------------------------+
+
+This list can be expanded by updating the phone app to include new states.
+
+Boolean strings
+^^^^^^^^^^^^^^^
+
+The trigger definition format supports compound boolean sentences.
+
+The following table lists the boolean symbols that can be used to construct boolean sentences.
+
++------------------------------+----------------------------------------------------------+
+| String                       |   Boolean definition                                     |
++==============================+==========================================================+
+| X < Y                        | True when X is less than Y                               |
++------------------------------+----------------------------------------------------------+
+| X <= Y                       | True when X is less than or equal to Y                   |
++------------------------------+----------------------------------------------------------+
+| X > Y                        | True when X is greater than Y                            |
++------------------------------+----------------------------------------------------------+
+| X >= Y                       | True when X is greater than or equal to Y                |
++------------------------------+----------------------------------------------------------+
+| X == Y                       | True when X is equal to Y                                |
++------------------------------+----------------------------------------------------------+
+| X : [Y, Z]                   | True when X is within the closed interval [Y, Z].        |
+|                              | Equivalent to (X <= Z & X >= Y)                          |
++------------------------------+----------------------------------------------------------+
+| ^(X)                         | True when X is False. Boolean negation.                  |
++------------------------------+----------------------------------------------------------+
+| X & Y                        | True when X and Y are both True                          |
++------------------------------+----------------------------------------------------------+
+| X | Y                        | True when either X or Y is True                          |
++------------------------------+----------------------------------------------------------+
+
+Example behavior definitions
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Lets say you want to fill a sampler jar at a specific location (45.403863, 10.999423), but only if the electrical
+conducitivy value is within a certain interval (400, 600)::
+
+	{
+		action: start_sampler,
+		trigger: "GPS @ [45.403863, 10.999423] & EC : [400, 600]",
+		interval: 1000,
+		ends: y
+	}
+
+With this definition, once per second the phone app will check the following conditions:
+
+#. if the distance from its current location to (45.403863, 10.999423) is less than 3 meters
+#. if the current EC value is >= 400
+#. if the current EC value is <= 600
+
+If *all 3* conditions are met, the boat will start pumping water into a sampler jar.
+
+Default behavior file
+^^^^^^^^^^^^^^^^^^^^^
+
+When the phone app is started, it searches for a file "default_behaviors.txt" in the phone's
+"platypus_behaviors" folder.
+
+If this file exists, any JSON behavior definitions in it are parsed and begin to execute.
+
+If you always want a behavior to exist, include a definition in the file.
+
+
+Sending new behaviors
+^^^^^^^^^^^^^^^^^^^^^
+
+This capability is being developed. 
+Currently, only the default behaviors file can be used.
+
 
 .. _operating_the_pg_filtering:
 
