@@ -549,7 +549,7 @@ The first three represent a preset of control parameters that have been tuned fo
 In almost all cases, a user should only use these three settings.
 Manual PID tuning should only be done by expert user!
 
-The "Custom" setting uses the manually selected values in the Advanced Options -> Preferences menu.
+The "Custom" setting uses the manually selected values in the :ref:`Advanced Options -> Preferences menu<tablet_preferences_custom_pids>`.
 
 You select these options by using the pulldown menu on the left of the GUI.
 
@@ -576,7 +576,7 @@ The recommended technique is to place the thumb in the center and *roll* the tip
 If you slide your thumb, it is very easy to lose your place and be unable to steer without looking.
 By rolling the thumb instead, you always maintain a "home" position for your thumb.
 
-The signal envelope for the thrust and rudder directions can be set in Advanced Options -> Preferences.
+The signal envelope for the thrust and rudder directions can be set in :ref:`Advanced Options -> Preferences menu<tablet_preferences_joystick_range>`.
 This is similar to the :ref:`RC transmitter's left stick<rc_throttle>`.
 
 .. image:: _static/images/tablet/thumbstick.jpg
