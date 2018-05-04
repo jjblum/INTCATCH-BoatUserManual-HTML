@@ -1,7 +1,7 @@
 .. _data:
 
-Data
-====
+Data Storage and Visualization
+==============================
 
 Phone logs
 ----------

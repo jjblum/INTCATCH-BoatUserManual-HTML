@@ -53,10 +53,11 @@ The hull is:
 
 .. _white_housing:
 
-INTCATCH White Housing
-^^^^^^^^^^^^^^^^^^^^^^
+INTCATCH Expansion Housing
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The INTCATCH project adds a variety of sensors to the platform, and incorporates a cloud data gateway
+The INTCATCH project adds a variety of sensors to the platform, 
+and incorporates a cloud data gateway
 in the form of GO Systemelektronik GmbH BlueBox system.
 
 An extra housing was designed to accommodate the additional electronics 
@@ -270,7 +271,7 @@ Cable Harness and Breaker
 
 The cable harness refers to the bundle of cables that run between 
 the rear and front compartments in the boat.
-The battery plugs into the XT90 connector.
+The battery plugs into the large, yellow XT90 connector.
 
 The 80 amp breaker is an important part of the harness.
 This breaker will open if more than 80 amps is drawn through the harness.
