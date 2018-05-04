@@ -67,6 +67,8 @@ replacing the acrylic plate used in the base Platypus product.
 
 .. image:: _static/images/white_housing.jpg
    :alt: white housing
+   :height: 480px
+   :align: center   
 
 :ref:`Top of this page <equipment>`
 
@@ -74,17 +76,21 @@ replacing the acrylic plate used in the base Platypus product.
 
 .. _sensor_mount:
 
-INTCATCH Sensor Mount
-^^^^^^^^^^^^^^^^^^^^^
+INTCATCH Sensor Mounting Frame
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This two-piece frame allows the sensors to be mounted to the underside of the boat.
 The bottom piece can be removed, allowing direct access to the sensor probes.
 
 .. image:: _static/images/sensor_mount.jpg
    :alt: sensor mount
+   :height: 480px
+   :align: center   
 
 .. image:: _static/images/sensor_mount_plate.jpg
    :alt: sensor mount plate
+   :height: 480px
+   :align: center   
 
 :ref:`Top of this page <equipment>`
 
@@ -106,6 +112,8 @@ The most commonly used battery is the Turnigy Multistar 4S, 16 Ah, 10C battery.
 
 .. image:: _static/images/battery.jpg
    :alt: battery
+   :height: 480px
+   :align: center   
 
 :ref:`Top of this page <equipment>`
 
@@ -125,6 +133,8 @@ The :ref:`ESCs <escs>` are controlled with the 3-wire cables attached to the e-b
 
 .. image:: _static/images/eboard.jpg
    :alt: eboard
+   :height: 480px
+   :align: center   
 
 It is important to note that there are two revisions of the e-board.
 Platypus revised their e-board design during the course of INTCATCH, 
@@ -136,6 +146,8 @@ The newer design is smaller, uses only red/black pairs of 45-amp Anderson Power 
 
 .. image:: _static/images/eboard_old_vs_new.jpg
    :alt: old and new e-boards
+   :height: 480px
+   :align: center   
 
 
 :ref:`Top of this page <equipment>`
@@ -153,6 +165,8 @@ They are in turn mounted to the floor of the rear compartment.
 
 .. image:: _static/images/powerpods.jpg
    :alt: power pods
+   :height: 480px
+   :align: center   
 
 :ref:`Top of this page <equipment>`
 
@@ -170,6 +184,8 @@ ESCs are found in the rear compartment of the boat.
 
 .. image:: _static/images/escs.jpg
    :alt: ESCs
+   :height: 480px
+   :align: center   
 
 :ref:`Top of this page <equipment>`
 
@@ -190,13 +206,15 @@ If the boat used two propellers that had the same pitch (instead of the reverse 
 the boat would bank sharply whenever you tried to thrust forward.
 But if the boat has a reverse pair, the reaction torque from both propellers cancels each other out, and the boat will drive straight.
 
-The most commonly used propeller is the [INFO ABOUT PROPS]
+The most commonly used propeller is the Graupner 45 mm diameter prop.
 
-The propeller with part number that ends in "L", e.g. 2317.51L is a reverse pitch propeller.
+The propeller with part number that ends in "L", e.g. 2317.45L is a reverse pitch propeller.
 It is mounted to the left (port) side drive train.
 
 .. image:: _static/images/reverse_prop_pair.jpg
    :alt: reverse propeller pair
+   :height: 480px
+   :align: center   
 
 :ref:`Top of this page <equipment>`
 
@@ -219,6 +237,8 @@ forward/backward and port/starboard.
 
 .. image:: _static/images/airfan_assembly.jpg
    :alt: airfan assembly
+   :height: 480px
+   :align: center   
 
 :ref:`Top of this page <equipment>`
 
@@ -239,9 +259,13 @@ The small plastic bottle in the rear compartment is the cooling fluid resevoir.
 
 .. image:: _static/images/pump.jpg
    :alt: cooling loop pump
+   :height: 480px
+   :align: center   
 
 .. image:: _static/images/resevoir.jpg
    :alt: cooling loop resevoir
+   :height: 480px
+   :align: center   
 
 :ref:`Top of this page <equipment>`
 
@@ -259,6 +283,8 @@ The most commonly used router is the Ubiquiti bullet.
 
 .. image:: _static/images/router.jpg
    :alt: WiFi router
+   :height: 480px
+   :align: center   
 
 :ref:`Top of this page <equipment>`
 
@@ -279,6 +305,8 @@ The :ref:`ESCs <escs>` are not meant to draw more than 80 amps.
 
 .. image:: _static/images/breaker.jpg
    :alt: circuit breaker
+   :height: 480px
+   :align: center   
 
 :ref:`Top of this page <equipment>`
 
@@ -331,6 +359,8 @@ between them as long as you have bound the receivers to a unique model in the tr
 
 .. image:: _static/images/rc_transmitter.jpg
    :alt: RC transmitter
+   :height: 480px
+   :align: center   
 
 .. _rc_receiver:
 
@@ -341,6 +371,8 @@ This receiver comes with its own integrated antennas.
 
 .. image:: _static/images/rc_receiver.jpg
    :alt: RC receiver
+   :height: 480px
+   :align: center   
 
 .. _sbus_inversion_cable:
 
@@ -354,6 +386,8 @@ This circuit is integrated into the cable connecting the receiver to the arduino
 
 .. image:: _static/images/rc_sbus_inversion_cable.jpg
    :alt: SBUS inversion cable
+   :height: 480px
+   :align: center   
 
 :ref:`Top of this page <equipment>`
 
@@ -405,6 +439,8 @@ interface with the BlueBox circuit board.
 
 .. image:: _static/images/bluebox_switch_and_regulator.jpg
    :alt: BlueBox switch and regulator
+   :height: 480px
+   :align: center   
 
 :ref:`Top of this page <equipment>`
 
@@ -433,6 +469,8 @@ typically mounted to the lid of the boat.
 
 .. image:: _static/images/bluebox_gps.jpg
    :alt: BlueBox GPS receiver
+   :height: 480px
+   :align: center   
 
 :ref:`Top of this page <equipment>`
 
@@ -459,6 +497,8 @@ or :ref:`triggered autonomously<autonomous_triggers>`.
 
 .. image:: _static/images/sampler.jpg
    :alt: sampler
+   :height: 480px
+   :align: center   
 
 
 :ref:`Top of this page <equipment>`

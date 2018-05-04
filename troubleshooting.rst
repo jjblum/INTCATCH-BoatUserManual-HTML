@@ -172,7 +172,7 @@ BlueBox will not turn on
 
 First, make sure that a :ref:`LiPo battery <lipo_battery>` is properly :ref:`plugged in <pluginthebattery>` and :ref:`charged <charge_the_battery>`.
 
-Then, if you flip the :ref:`bluebox_power_switch` on, the :ref:`BlueBox <bluebox>` should turn on.
+Then, if you flip the :ref:`BlueBox power switch<bluebox_power>` on, the :ref:`BlueBox <bluebox>` should turn on.
 If it does not, make sure that no wires have become loose.
 If all the wires are still in their proper connections, and the BlueBox still does not turn on,
 it may have been damaged.
@@ -271,7 +271,7 @@ The hub is on the right (starboard) side of the white housing.
 
 .. raw:: html
 
-   <video width="640" height="480" controls muted> 
+   <video width="640" height="480" style="display:block; margin: 0 auto;" controls muted> 
      <source src="_static/videos/usb_hub.mp4" type="video/mp4"/>
      Your browser does not support the video tag.
    </video>
@@ -440,12 +440,12 @@ The vector map will show a light tan color for land and light blue for water in 
 The satellite image map will show a pure black color for the default image.
 
 .. image:: _static/images/cached_vs_not_cached_map_vectored.jpg
-   :width: 544px
-   :height: 286px
+   :height: 480px
+   :align: center
 
 .. image:: _static/images/cached_vs_not_cached_map_satellite.jpg
-   :width: 544px
-   :height: 286px
+   :height: 480px
+   :align: center
 
 When you deploy the boat, the tablet is connected to the :ref:`boat's WiFi router<wifi_router>`,
 which does not provide an internet connection.
@@ -591,7 +591,7 @@ If the damage is extensive for one propeller but not the other, the boat may eve
 Check for a damaged propeller.
 
 If the propellers are not damaged but the boat still revs the motors back and forth,
-the :ref:`PID control needs to be adjusted<manual_pid_tuning>`. 
+the :ref:`PID control needs to be adjusted<tablet_preferences_custom_pids>`. 
 
 :ref:`Top of this page <troubleshooting>`
 

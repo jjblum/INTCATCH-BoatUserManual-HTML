@@ -19,8 +19,8 @@ Before storing the boat inside the bag, it is suggested to:
 #. Ensuring that the bag is long and large enough to store the boat comfortably
 
 .. image:: _static/images/transportation/bubble-wrap.jpg
-   :width: 544px
-   :height: 408px
+   :height: 480px
+   :align: center
 
 
 Personal transport
@@ -31,8 +31,8 @@ ensure that the bubble wrap is placed between the edges of the boat and the
 legs of the person carrying the boat.
 
 .. image:: _static/images/transportation/single_person_dufflebag.jpg
-   :width: 544px
-   :height: 408px
+   :height: 480px
+   :align: center
    
 Vehicle transport
 ^^^^^^^^^^^^^^^^^^
@@ -48,13 +48,12 @@ it is suggested to:
 #. Ensuring that the rear luggage compartment is long and large enough to store the duffle bag comfortably
 
 .. image:: _static/images/transportation/luggage_compartment.jpg
-   :width: 544px
-   :height: 408px
+   :height: 480px
+   :align: center
 
 .. image:: _static/images/transportation/vehicle_transport.jpg
-   :width: 544px
-   :height: 408px
-   
+   :height: 480px   
+   :align: center
 
    
 Long distance transport
@@ -81,7 +80,7 @@ Follow your typical balance-charger instructions.
 
 .. raw:: html
 
-   <video width="640" height="480" controls muted> 
+   <video width="640" height="480" style="display:block; margin: 0 auto;" controls muted> 
      <source src="_static/videos/charge_battery.mp4" type="video/mp4"/>
      Your browser does not support the video tag.
    </video>
@@ -126,12 +125,12 @@ If the tablet app does not have the tiles and cannot download them,
 it will display a generic blank replacement.
 
 .. image:: _static/images/cached_vs_not_cached_map_vectored.jpg
-   :width: 544px
-   :height: 286px
+   :height: 480px
+   :align: center
 
 .. image:: _static/images/cached_vs_not_cached_map_satellite.jpg
-   :width: 544px
-   :height: 286px
+   :height: 480px
+   :align: center
 
 Because of this, a user should cache the tiles that they need for a deployment
 with a convenient internet connection before the actual deployment of the boat.
@@ -267,6 +266,8 @@ switch two wires so that the new configuration is
 
 .. image:: _static/images/motor_wires.jpg
    :alt: motor wires
+   :height: 480px
+   :align: center   
 
 :ref:`Top of this page <before_deploying>`
 

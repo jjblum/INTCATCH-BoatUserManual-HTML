@@ -50,7 +50,7 @@ Use your thumb to push.
 
 .. raw:: html
 
-	<video width="640" height="480" controls muted> 
+	<video width="640" height="480" style="display:block; margin: 0 auto;" controls muted> 
 		<source src="_static/videos/sliding_lock_remove.mp4" type="video/mp4"/>
 		Your browser does not support the video tag.
 	</video>
@@ -68,7 +68,7 @@ Finally, connect the yellow xt90 connectors.
 
 .. raw:: html
 
-	<video width="640" height="480" controls muted> 
+	<video width="640" height="480" style="display:block; margin: 0 auto;" controls muted> 
 		<source src="_static/videos/insert_battery.mp4" type="video/mp4"/>
 		Your browser does not support the video tag.
 	</video>
@@ -84,7 +84,7 @@ Press the small white button on the eboard - the circuit board installed in the 
 
 .. raw:: html
 
-   <video width="640" height="480" controls muted> 
+   <video width="640" height="480" style="display:block; margin: 0 auto;" controls muted> 
      <source src="_static/videos/eboard_button_closeup.mp4" type="video/mp4"/>
      Your browser does not support the video tag.
    </video>
@@ -127,7 +127,7 @@ Once the phone is plugged into the rest of the system and the BlueBox, these war
 
 .. raw:: html
 
-   <video width="640" height="480" controls muted> 
+   <video width="640" height="480" style="display:block; margin: 0 auto;" controls muted> 
      <source src="_static/videos/phone_app_start.mp4" type="video/mp4"/>
      Your browser does not support the video tag.
    </video>
@@ -154,7 +154,7 @@ Without this, the boat will not be able to correctly measure its heading.
 
 .. raw:: html
 
-   <video width="640" height="480" controls muted> 
+   <video width="640" height="480" style="display:block; margin: 0 auto;" controls muted> 
      <source src="_static/videos/compass_calibrate.mp4" type="video/mp4"/>
      Your browser does not support the video tag.
    </video>
@@ -171,7 +171,7 @@ The electronic speed controllers (ESCs) in the boat's rear compartment should be
 
 .. raw:: html
 
-   <video width="640" height="480" controls muted> 
+   <video width="640" height="480" style="display:block; margin: 0 auto;" controls muted> 
      <source src="_static/videos/plug_in_phone.mp4" type="video/mp4"/>
      Your browser does not support the video tag.
    </video>
@@ -188,7 +188,7 @@ This sends a signal from the phone to the arduino to expect the BlueBox and RC r
 
 .. raw:: html
 
-   <video width="640" height="480" controls muted> 
+   <video width="640" height="480" style="display:block; margin: 0 auto;" controls muted> 
      <source src="_static/videos/phone_app_sensor_type_button.mp4" type="video/mp4"/>
      Your browser does not support the video tag.
    </video>
@@ -205,7 +205,7 @@ Try not to press the side of the phone down too hard - we do not want to hold do
 
 .. raw:: html
 
-   <video width="640" height="480" controls muted> 
+   <video width="640" height="480" style="display:block; margin: 0 auto;" controls muted> 
      <source src="_static/videos/mount_phone.mp4" type="video/mp4"/>
      Your browser does not support the video tag.
    </video>
@@ -221,7 +221,7 @@ Flip the large red switch in the forward right(starboard bow) corner of the whit
 
 .. raw:: html
 
-   <video width="640" height="480" controls muted> 
+   <video width="640" height="480" style="display:block; margin: 0 auto;" controls muted> 
      <source src="_static/videos/bb_switch_on.mp4" type="video/mp4"/>
      Your browser does not support the video tag.
    </video>
@@ -292,7 +292,7 @@ Make sure the brackets are aligned and pinched together, and the black locks sho
 
 .. raw:: html
 
-   <video width="640" height="480" controls muted> 
+   <video width="640" height="480" style="display:block; margin: 0 auto;" controls muted> 
      <source src="_static/videos/sliding_lock_attach.mp4" type="video/mp4"/>
      Your browser does not support the video tag.
    </video>

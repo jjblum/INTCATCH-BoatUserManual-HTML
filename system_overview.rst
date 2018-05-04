@@ -21,6 +21,8 @@ allows to have an easy to deploy system and a fast checking procedure before put
 water to detect if the system is running correctly.
 
 .. image:: _static/images/overview/general-schema.jpg
+   :height: 480px
+   :align: center
 
 .. _architecture:
 
@@ -36,6 +38,8 @@ The :ref:`RC controller<rc_equipment>` can be used when the user needs a direct 
 It works on a radio signal thus allowing for long range (>1.5km) connection to the boat.
 
 .. image:: _static/images/overview/architecture.jpg
+   :height: 480px
+   :align: center
 
 When operating in autonomous mode, a :ref:`tablet<phone_and_tablet>` with the Android operating system can be used to control the boat.
 The user can define a waypoint path on the tablet that the boat follows, navigating autonomously.
