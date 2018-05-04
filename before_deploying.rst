@@ -278,21 +278,37 @@ switch two wires so that the new configuration is
 Manually preparing and uploading waypoints
 ------------------------------------------
 
-TODO
+:ref:`Sets of waypoints can be saved and loaded in the tablet control application<tablet_saveload_waypoints>`.
 
-Waypoints folder
+Additional waypoint files can be manually created and :ref:`uploaded to the tablet<computer_to_phone_or_tablet>`.
 
-JSON format of waypoints files
+The files are stored in the "waypoints" folder of the tablet.
 
-.. _default_autonomous_triggers:
+The files use a JSON format::
 
-Changing the default autonomous triggers
-----------------------------------------
+  {
+      "path0": [
+          "45.50505554148813, 10.7308466295068",
+          "45.50495767519297, 10.730831399844874",
+          "45.50501350713182, 10.730947379545796"
+      ]
+      "path1": [
+          "45.50485333162169, 10.730676363167845",
+          "45.50482331704393, 10.730926838738128"
+      ]
+  }
 
-TODO
+Note the use of square brackets and quotation marks.
 
-behaviors folder
 
-JSON format of triggers
+.. _default_autonomous_behaviors:
 
-Example
+Changing the default autonomous behaviors
+-----------------------------------------
+
+The :ref:`default autonomous behaviors <default_autonomous_file>`
+can be altered to change the default :ref:`autonomous behaviors<autonomous_behaviors>`.
+
+Follow the required JSON format and 
+:ref:`overwrite the contents of the file<computer_to_phone_or_tablet>`
+stored in the "platypus_behaviors" folder in the phone.

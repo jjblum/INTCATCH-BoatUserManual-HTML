@@ -7,7 +7,7 @@ There are three ways to control the boat.
 
 #. :ref:`manually pilot the boat with the RC control<rc_control>`
 #. :ref:`use the tablet control application<using_the_tablet>` to take advantage of autonomous navigation
-#. :ref:`define autonomous triggers to start behavior when specific conditions are fulfilled<autonomous_triggers>`
+#. :ref:`define autonomous behaviors <autonomous_behaviors>`
 
 While the RC control may seem simple and intuitive, we recommend the use of autonomy whenever possible.
 A human operator will still need to intervene from time to time, but the majority of the time
@@ -696,7 +696,7 @@ open a popup menu of the following options:
 #. :ref:`tablet_save_and_load_waypoints`
 #. :ref:`tablet_snooze_battery_alarms`
 #. :ref:`tablet_set_preferences`
-#. :ref:`tablet_construct_and_send_autonomous_triggers`
+#. :ref:`tablet_construct_and_send_autonomous_behaviors`
 
 .. image:: _static/images/tablet/advanced_options_menu.jpg
    :alt: Advanced options menu
@@ -849,15 +849,15 @@ These options allow an expert user to select the voltage levels that trigger war
    :height: 480px
    :align: center   
 
-.. _tablet_construct_and_send_autonomous_triggers:
+.. _tablet_construct_and_send_autonomous_behaviors:
 
-Construct and send new autonomous triggers
-""""""""""""""""""""""""""""""""""""""""""
+Construct and send new autonomous behaviors
+"""""""""""""""""""""""""""""""""""""""""""
 
 Pressing this button will open up another screen. This screen is currently under construction.
 
 Once completed, it will provide a user interface to construct and send 
-new :ref:`autonomous triggers<autonomous_triggers>` to the boat.
+new :ref:`autonomous behaviors<autonomous_behaviors>` to the boat.
 
 Until this is completed, the user should press the back button to return to the main GUI.
 
@@ -974,12 +974,12 @@ Consistently driving in straight lines with an airboat will require practice!
 
 :ref:`Back to the index <index>`
 
-.. _autonomous_triggers:
+.. _autonomous_behaviors:
 
-Autonomous triggers
--------------------
+Autonomous behaviors
+--------------------
 
-Autonomous triggers allow the autonomous boat to perform actions once a set of conditions has been fulfilled.
+Autonomous behaviors allow the autonomous boat to perform actions once a set of conditions has been fulfilled.
 
 This logic-action pair is referred to as a "behavior".
 Each behavior is defined by five things:
@@ -1121,6 +1121,8 @@ With this definition, once per second the phone app will check the following con
 #. if the current EC value is <= 600
 
 If *all 3* conditions are met, the boat will start pumping water into a sampler jar.
+
+.. _default_autonomous_file:
 
 Default behavior file
 ^^^^^^^^^^^^^^^^^^^^^
