@@ -5,15 +5,13 @@
 
 .. _index:
 
-.. image:: _static/images/logo.png
+.. image:: _static/images/logo.jpg
    :alt: intcatch logo
 
 INTCATCH boat user manual
 =========================
 
 .. image:: _static/images/robot_at_garda.jpg
-   :width: 544px
-   :height: 286px
    :alt: intcatch boats
    
 
@@ -22,7 +20,7 @@ INTCATCH boat user manual
 
    safety
    quick_start
-   system_overview   
+   system_overview
    equipment
    before_deploying
    boat_setup

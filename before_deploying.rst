@@ -3,6 +3,20 @@
 Before Deploying
 ================
 
+.. _transporting_the_boat:
+
+Transporting the Boat
+---------------------
+
+general stuff like taking out battery, making sure lids are secure
+
+
+Personal transport
+^^^^^^^^^^^^^^^^^^
+
+dufflebag
+
+
 .. _charge_the_battery:
 
 Charge the LiPo batteries
@@ -27,7 +41,7 @@ Follow your typical balance-charger instructions.
 :ref:`Back to the index <index>`
 
 Charge the phone and tablet
------------------------------
+---------------------------
 
 These are standard, modern Android devices. Plug them into a USB device charger.
 
