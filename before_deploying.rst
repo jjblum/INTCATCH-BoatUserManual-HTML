@@ -8,14 +8,64 @@ Before Deploying
 Transporting the Boat
 ---------------------
 
-general stuff like taking out battery, making sure lids are secure
+The boat has been conceived to be deployed by a single person.
+It is possible to transport the boat putting it inside a duffle bag.
+
+Before storing the boat inside the bag, it is suggested to:
+
+#. Taking out the battery
+#. Making sure lids are secure
+#. Putting bubble wrap inside the bag
+#. Ensuring that the bag is long and large enough to store the boat comfortably
+
+.. image:: _static/images/transportation/bubble-wrap.jpg
+   :width: 544px
+   :height: 408px
 
 
 Personal transport
 ^^^^^^^^^^^^^^^^^^
 
-dufflebag
+The boat can be transported by a single person using a duffle bag. It is suggested to
+ensure that the bubble wrap is placed between the edges of the boat and the
+legs of the person carrying the boat.
 
+.. image:: _static/images/transportation/single_person_dufflebag.jpg
+   :width: 544px
+   :height: 408px
+   
+Vehicle transport
+^^^^^^^^^^^^^^^^^^
+
+To reach a deployment location that is reachable by car, it is possible to transport the boat using
+the rear luggage compartment of the car.
+Any typical passenger car can be used, a track or utility vehicle is not required.
+
+Before putting the dufflebag containing the boat inside the rear luggage compartment of the car,
+it is suggested to:
+
+#. Removing sharp or fragile objects from the rear luggage compartment
+#. Ensuring that the rear luggage compartment is long and large enough to store the duffle bag comfortably
+
+.. image:: _static/images/transportation/luggage_compartment.jpg
+   :width: 544px
+   :height: 408px
+
+.. image:: _static/images/transportation/vehicle_transport.jpg
+   :width: 544px
+   :height: 408px
+   
+
+   
+Long distance transport
+^^^^^^^^^^^^^^^^^^^^^^^
+
+To reach a deployment location that is not reachable by car, it is suggested to send the boat at destination
+by using a professional packaging company.
+
+:ref:`Top of this page <before_deploying>`
+
+:ref:`Back to the index <index>`
 
 .. _charge_the_battery:
 
