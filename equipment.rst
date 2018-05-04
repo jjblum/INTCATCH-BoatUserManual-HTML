@@ -288,6 +288,7 @@ Phone and Tablet
 ----------------
 
 The phone must be an Android phone, with Android 7.0 or newer. 
+It must also have a gyroscope, accelerometer, compass, GPS, and modern WiFi connectivity.
 The typical phone is a Nexus 5X. 
 It has a USB-C port.
 
