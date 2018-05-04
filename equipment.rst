@@ -10,7 +10,8 @@ Equipment
 * :ref:`phone_and_tablet`
 * :ref:`bluebox_and_sensors`
 * :ref:`platypus_sampler`
-* :ref:`personal_genomics`
+
+.. * :ref:`personal_genomics`
 
 .. _boat:
 
@@ -362,62 +363,75 @@ This circuit is integrated into the cable connecting the receiver to the arduino
 BlueBox and Sensors
 -------------------
 
-* Bluebox main circuit board
-* power on/off switch
-* voltage regulator
-* SIM card/modem location
-* modem antenna cable
-* modem antenna
-* USB hub
-* USB DB9 cable
-* GPS unit
-* DO/Relay board
-* ISA board
-* screen module
-* EC sensor
-* DO sensor
-* ISA sensor
-* pH sensor
-
 .. _bluebox:
 
 BlueBox
 ^^^^^^^
 
-asdf
+The BlueBox is a modular and scalable system to manage large
+numbers of sensors and actuators. It handles data storage,
+wired and wireless transmission of data, and sensor calibration.
+
+More details on the BlueBox system and associated equipment can
+be found at https://www.go-sys.de/en/bluebox/.
 
 :ref:`Top of this page <equipment>`
 
 :ref:`Back to the index <index>`
 
-.. _bluebox_power_switch:
+.. _bluebox_power:
 
-BlueBox power switch
-^^^^^^^^^^^^^^^^^^^^
+BlueBox power switch and voltage regulator
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-asdf
+The BlueBox requires a steady 24 V DC current. 
+The voltage provided by the lithium polymer (LiPo) battery used 
+by the boat varies from over 16 V down to below 14 V. 
+To provide a steady 24V input, a voltage regulator is installed 
+between the LiPo battery and the main BlueBox board’s power input.
+
+A simple two-position DC switch is used to allow the BlueBox 
+and the rest of the boat to be powered on separately. 
+
+The battery’s ground serves as the common ground for the Platypus
+e-board, the main BlueBox circuit board, and the DO/pH/relay circuit board. 
+The DO and pH sensors’ raw readings are voltage measurements 
+that could be biased by a “floating ground”, 
+thus this common ground was critical for accurate measurements.
+
+The DO/pH/relay and ISA circuit boards receive power via their CAN-bus 
+interface with the BlueBox circuit board.
+
+.. image:: _static/images/bluebox_switch_and_regulator.jpg
+   :alt: BlueBox switch and regulator
 
 :ref:`Top of this page <equipment>`
 
 :ref:`Back to the index <index>`
 
-.. _bluebox_voltage_regulator:
+.. _bluebox_sensors:
 
-BlueBox voltage regulator
-^^^^^^^^^^^^^^^^^^^^^^^^^
+BlueBox sensors
+^^^^^^^^^^^^^^^
 
-asdf
+The boat is typically equipped with a pH sensor, 
+a dissolved oxygen sensor, and an electrical conducitivty sensor.
 
-:ref:`Top of this page <equipment>`
-
-:ref:`Back to the index <index>`
+* pH: https://www.go-sys.de/en/products/sensors/ph-electrode-swimming_pool/
+* DO: https://www.go-sys.de/en/products/sensors/oxygen-and-temperature-sensor-submersible/
+* EC: https://www.go-sys.de/en/products/sensors/conductivity-temperature-immersion-sensor-small/
 
 .. _bluebox_gps:
 
 BlueBox GPS receiver
 ^^^^^^^^^^^^^^^^^^^^
 
-asdf
+The BlueBox utilizes its own GPS receiver. 
+This receiver connects to the BlueBox's USB hub and is
+typically mounted to the lid of the boat.
+
+.. image:: _static/images/bluebox_gps.jpg
+   :alt: BlueBox GPS receiver
 
 :ref:`Top of this page <equipment>`
 
@@ -439,7 +453,7 @@ with a special rear plate and a propeller boat.
 * Each tube is installed on its own peristaltic pump.
 * It takes approximately 4 minutes to fill a jar.
 
-The jars can be individually :ref:`activated with the tablet<operating_the_sampler>` 
+The jars can be individually :ref:`activated with the tablet<tablet_sampler>` 
 or :ref:`triggered autonomously<autonomous_triggers>`.
 
 .. image:: _static/images/sampler.jpg
@@ -450,16 +464,16 @@ or :ref:`triggered autonomously<autonomous_triggers>`.
 
 :ref:`Back to the index <index>`
 
-.. _personal_genomics:
+.. .. _personal_genomics:
 
-Personal Genomics Water Filtration
-----------------------------------
+.. Personal Genomics Water Filtration
+.. ----------------------------------
 
-* stepper motor
-* pump head
-* filters
-* flow sensors
+.. * stepper motor
+.. * pump head
+.. * filters
+.. * flow sensors
 
-:ref:`Top of this page <equipment>`
+.. :ref:`Top of this page <equipment>`
 
-:ref:`Back to the index <index>`
+.. :ref:`Back to the index <index>`

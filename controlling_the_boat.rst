@@ -1070,12 +1070,9 @@ This capability is being developed.
 Currently, only the default behaviors file can be used.
 
 
-.. _operating_the_pg_filtering:
-
-Operating the Personal Genomics filtering system
-------------------------------------------------
-
-asdf
+.. .. _operating_the_pg_filtering:
+.. Operating the Personal Genomics filtering system
+.. ------------------------------------------------
 
 
 
