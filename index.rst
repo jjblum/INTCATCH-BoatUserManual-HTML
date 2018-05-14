@@ -5,12 +5,13 @@
 
 .. _index:
 
-INTCATCH boat user manual
-=========================
+Table of Contents
+=================
 
 .. image:: _static/images/robot_at_garda.jpg
    :alt: intcatch boats
    :height: 480px
+   :align: center
    
 
 .. toctree::

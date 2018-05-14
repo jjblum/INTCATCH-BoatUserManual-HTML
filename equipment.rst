@@ -493,7 +493,7 @@ with a special rear plate and a propeller boat.
 * It takes approximately 4 minutes to fill a jar.
 
 The jars can be individually :ref:`activated with the tablet<tablet_sampler>` 
-or :ref:`triggered autonomously<autonomous_triggers>`.
+or :ref:`triggered autonomously<autonomous_behaviors>`.
 
 .. image:: _static/images/sampler.jpg
    :alt: sampler

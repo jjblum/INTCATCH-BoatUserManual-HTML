@@ -71,12 +71,13 @@ by using a professional packaging company.
 Charge the LiPo batteries
 -------------------------
 
-The batteries are quite large - you should assume that they will need to charge overnight.
+The :ref:`boat's LiPo batteries<lipo_battery>` are quite large - you should assume that they will need to charge overnight.
 
 It is a good idea to never use more than 3 amps of charging current. This should prolong the lifetime of a battery.
 
 Other than their unusually large capacity, the LiPo batteries are typical. 
 Follow your typical balance-charger instructions.
+Take a look at :ref:`LiPo battery safety<lipo_battery_safety>`.
 
 .. raw:: html
 
