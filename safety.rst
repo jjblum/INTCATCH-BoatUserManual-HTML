@@ -3,6 +3,8 @@
 Safety
 ======
 
+.. _lipo_battery_safety:
+
 LiPo battery handling
 ^^^^^^^^^^^^^^^^^^^^^
 

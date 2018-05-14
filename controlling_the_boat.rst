@@ -1,4 +1,4 @@
-.. _controllingtheboat:
+.. _controlling_the_boat:
 
 Controlling the Boat
 ====================
@@ -69,7 +69,7 @@ The GUI has the following additional capabilities:
 #. :ref:`If you have a sampler, control the sampler<tablet_sampler>`
 #. :ref:`Changing "advanced options"<tablet_advanced_options>`
 
-:ref:`Top of this page <controllingtheboat>`
+:ref:`Top of this page <controlling_the_boat>`
 
 :ref:`Back to the index <index>`
 
@@ -108,7 +108,7 @@ will be share the same color as the boat.
 A path segment that has been assigned to a boat, and the boat has finished that segment,
 will turn a dark grey. 
 
-:ref:`Top of this page <controllingtheboat>`
+:ref:`Top of this page <controlling_the_boat>`
 
 :ref:`Back to the index <index>`
 
@@ -162,7 +162,7 @@ The IP address associated with the currently selected boat is also displayed in 
    :height: 480px
    :align: center
 
-:ref:`Top of this page <controllingtheboat>`
+:ref:`Top of this page <controlling_the_boat>`
 
 :ref:`Back to the index <index>`
 
@@ -189,7 +189,7 @@ button to force the map to center on top of the currently selected boat.
    :height: 480px
    :align: center
 
-:ref:`Top of this page <controllingtheboat>`
+:ref:`Top of this page <controlling_the_boat>`
 
 :ref:`Back to the index <index>`
 
@@ -231,7 +231,7 @@ This option becomes useful if it is too difficult to accurately place waypoint b
    :height: 480px
    :align: center
 
-:ref:`Top of this page <controllingtheboat>`
+:ref:`Top of this page <controlling_the_boat>`
 
 :ref:`Back to the index <index>`
 
@@ -250,7 +250,7 @@ You can continue to press this button, and it will continue to remove the waypoi
    :height: 480px
    :align: center
 
-:ref:`Top of this page <controllingtheboat>`
+:ref:`Top of this page <controlling_the_boat>`
 
 :ref:`Back to the index <index>`
 
@@ -266,7 +266,7 @@ Pressing this button will remove all the waypoints from the map.
    :height: 480px
    :align: center
 
-:ref:`Top of this page <controllingtheboat>`
+:ref:`Top of this page <controlling_the_boat>`
 
 :ref:`Back to the index <index>`
 
@@ -297,7 +297,7 @@ If you want to move it to a location hidden by the information box,
 you will need to first move it to a spot far away.
 Then you will be able to move it again, with the desired location not hidden behind the box.
 
-:ref:`Top of this page <controllingtheboat>`
+:ref:`Top of this page <controlling_the_boat>`
 
 :ref:`Back to the index <index>`
 
@@ -322,7 +322,7 @@ The boat will then autonomously navigation back along the dropped waypoints.
    :height: 480px
    :align: center
 
-:ref:`Top of this page <controllingtheboat>`
+:ref:`Top of this page <controlling_the_boat>`
 
 :ref:`Back to the index <index>`
 
@@ -361,7 +361,7 @@ To load a set of waypoints, you must
    :height: 480px
    :align: center
 
-:ref:`Top of this page <controllingtheboat>`
+:ref:`Top of this page <controlling_the_boat>`
 
 :ref:`Back to the index <index>`
 
@@ -448,7 +448,7 @@ Be careful using a small value over a large area! You may overload the tablet's 
    :height: 480px
    :align: center
 
-:ref:`Top of this page <controllingtheboat>`
+:ref:`Top of this page <controlling_the_boat>`
 
 :ref:`Back to the index <index>`
 
@@ -472,7 +472,7 @@ This will also remove the path and waypoints.
    :height: 480px
    :align: center
 
-:ref:`Top of this page <controllingtheboat>`
+:ref:`Top of this page <controlling_the_boat>`
 
 :ref:`Back to the index <index>`
 
@@ -536,7 +536,7 @@ This prevents stale data from misleading a user.
    :height: 480px
    :align: center
 
-:ref:`Top of this page <controllingtheboat>`
+:ref:`Top of this page <controlling_the_boat>`
 
 :ref:`Back to the index <index>`
 
@@ -570,7 +570,7 @@ Selecting a new boat will also update the following, as the tablet starts listen
    :height: 480px
    :align: center   
 
-:ref:`Top of this page <controllingtheboat>`
+:ref:`Top of this page <controlling_the_boat>`
 
 :ref:`Back to the index <index>`
 
@@ -601,7 +601,7 @@ You select these options by using the pulldown menu on the left of the GUI.
    :align: center   
 
 
-:ref:`Top of this page <controllingtheboat>`
+:ref:`Top of this page <controlling_the_boat>`
 
 :ref:`Back to the index <index>`
 
@@ -628,7 +628,7 @@ This is similar to the :ref:`RC transmitter's left stick<rc_throttle>`.
    :height: 480px
    :align: center   
 
-:ref:`Top of this page <controllingtheboat>`
+:ref:`Top of this page <controlling_the_boat>`
 
 :ref:`Back to the index <index>`
 
@@ -677,7 +677,7 @@ To reset this, press and hold the reset button for ~ 1 second.
    :align: center   
 
 
-:ref:`Top of this page <controllingtheboat>`
+:ref:`Top of this page <controlling_the_boat>`
 
 :ref:`Back to the index <index>`
 
@@ -866,7 +866,7 @@ Until this is completed, the user should press the back button to return to the 
    :height: 480px
    :align: center   
 
-:ref:`Top of this page <controllingtheboat>`
+:ref:`Top of this page <controlling_the_boat>`
 
 :ref:`Back to the index <index>`
 
@@ -970,7 +970,7 @@ drifting into a spin, and gently provide thrust in the opposite direction.
 Consistently driving in straight lines with an airboat will require practice!
 
 
-:ref:`Top of this page <controllingtheboat>`
+:ref:`Top of this page <controlling_the_boat>`
 
 :ref:`Back to the index <index>`
 
@@ -1149,6 +1149,6 @@ Currently, only the default behaviors file can be used.
 
 
 
-:ref:`Top of this page <controllingtheboat>`
+:ref:`Top of this page <controlling_the_boat>`
 
 :ref:`Back to the index <index>`
