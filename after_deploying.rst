@@ -1,4 +1,4 @@
-.. _afterdeploying:
+.. _after_deploying:
 
 After Deploying
 ===============

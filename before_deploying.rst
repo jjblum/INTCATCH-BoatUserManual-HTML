@@ -19,8 +19,8 @@ Before storing the boat inside the bag, it is suggested to:
 #. Ensuring that the bag is long and large enough to store the boat comfortably
 
 .. image:: _static/images/transportation/bubble-wrap.jpg
-   :width: 544px
-   :height: 408px
+   :height: 480px
+   :align: center
 
 
 Personal transport
@@ -31,8 +31,8 @@ ensure that the bubble wrap is placed between the edges of the boat and the
 legs of the person carrying the boat.
 
 .. image:: _static/images/transportation/single_person_dufflebag.jpg
-   :width: 544px
-   :height: 408px
+   :height: 480px
+   :align: center
    
 Vehicle transport
 ^^^^^^^^^^^^^^^^^^
@@ -48,13 +48,12 @@ it is suggested to:
 #. Ensuring that the rear luggage compartment is long and large enough to store the duffle bag comfortably
 
 .. image:: _static/images/transportation/luggage_compartment.jpg
-   :width: 544px
-   :height: 408px
+   :height: 480px
+   :align: center
 
 .. image:: _static/images/transportation/vehicle_transport.jpg
-   :width: 544px
-   :height: 408px
-   
+   :height: 480px   
+   :align: center
 
    
 Long distance transport
@@ -72,16 +71,17 @@ by using a professional packaging company.
 Charge the LiPo batteries
 -------------------------
 
-The batteries are quite large - you should assume that they will need to charge overnight.
+The :ref:`boat's LiPo batteries<lipo_battery>` are quite large - you should assume that they will need to charge overnight.
 
 It is a good idea to never use more than 3 amps of charging current. This should prolong the lifetime of a battery.
 
 Other than their unusually large capacity, the LiPo batteries are typical. 
 Follow your typical balance-charger instructions.
+Take a look at :ref:`LiPo battery safety<lipo_battery_safety>`.
 
 .. raw:: html
 
-   <video width="640" height="480" controls muted> 
+   <video width="640" height="480" style="display:block; margin: 0 auto;" controls muted> 
      <source src="_static/videos/charge_battery.mp4" type="video/mp4"/>
      Your browser does not support the video tag.
    </video>
@@ -126,12 +126,12 @@ If the tablet app does not have the tiles and cannot download them,
 it will display a generic blank replacement.
 
 .. image:: _static/images/cached_vs_not_cached_map_vectored.jpg
-   :width: 544px
-   :height: 286px
+   :height: 480px
+   :align: center
 
 .. image:: _static/images/cached_vs_not_cached_map_satellite.jpg
-   :width: 544px
-   :height: 286px
+   :height: 480px
+   :align: center
 
 Because of this, a user should cache the tiles that they need for a deployment
 with a convenient internet connection before the actual deployment of the boat.
@@ -267,6 +267,8 @@ switch two wires so that the new configuration is
 
 .. image:: _static/images/motor_wires.jpg
    :alt: motor wires
+   :height: 480px
+   :align: center   
 
 :ref:`Top of this page <before_deploying>`
 
@@ -277,21 +279,37 @@ switch two wires so that the new configuration is
 Manually preparing and uploading waypoints
 ------------------------------------------
 
-TODO
+:ref:`Sets of waypoints can be saved and loaded in the tablet control application<tablet_saveload_waypoints>`.
 
-Waypoints folder
+Additional waypoint files can be manually created and :ref:`uploaded to the tablet<computer_to_phone_or_tablet>`.
 
-JSON format of waypoints files
+The files are stored in the "waypoints" folder of the tablet.
 
-.. _default_autonomous_triggers:
+The files use a JSON format::
 
-Changing the default autonomous triggers
-----------------------------------------
+  {
+      "path0": [
+          "45.50505554148813, 10.7308466295068",
+          "45.50495767519297, 10.730831399844874",
+          "45.50501350713182, 10.730947379545796"
+      ]
+      "path1": [
+          "45.50485333162169, 10.730676363167845",
+          "45.50482331704393, 10.730926838738128"
+      ]
+  }
 
-TODO
+Note the use of square brackets and quotation marks.
 
-behaviors folder
 
-JSON format of triggers
+.. _default_autonomous_behaviors:
 
-Example
+Changing the default autonomous behaviors
+-----------------------------------------
+
+The :ref:`default autonomous behaviors <default_autonomous_file>`
+can be altered to change the default :ref:`autonomous behaviors<autonomous_behaviors>`.
+
+Follow the required JSON format and 
+:ref:`overwrite the contents of the file<computer_to_phone_or_tablet>`
+stored in the "platypus_behaviors" folder in the phone.

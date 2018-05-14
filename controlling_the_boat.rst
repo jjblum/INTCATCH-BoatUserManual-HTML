@@ -1,4 +1,4 @@
-.. _controllingtheboat:
+.. _controlling_the_boat:
 
 Controlling the Boat
 ====================
@@ -7,7 +7,7 @@ There are three ways to control the boat.
 
 #. :ref:`manually pilot the boat with the RC control<rc_control>`
 #. :ref:`use the tablet control application<using_the_tablet>` to take advantage of autonomous navigation
-#. :ref:`define autonomous triggers to start behavior when specific conditions are fulfilled<autonomous_triggers>`
+#. :ref:`define autonomous behaviors <autonomous_behaviors>`
 
 While the RC control may seem simple and intuitive, we recommend the use of autonomy whenever possible.
 A human operator will still need to intervene from time to time, but the majority of the time
@@ -69,7 +69,7 @@ The GUI has the following additional capabilities:
 #. :ref:`If you have a sampler, control the sampler<tablet_sampler>`
 #. :ref:`Changing "advanced options"<tablet_advanced_options>`
 
-:ref:`Top of this page <controllingtheboat>`
+:ref:`Top of this page <controlling_the_boat>`
 
 :ref:`Back to the index <index>`
 
@@ -84,6 +84,8 @@ The map can be displayed as vector graphics or satellite imagery.
 
 .. image:: _static/images/tablet/plain.jpg
    :alt: the tablet app
+   :height: 480px
+   :align: center
 
 There are 4 types markers that are displayed on the map.
 
@@ -95,6 +97,8 @@ There are 4 types markers that are displayed on the map.
 
 .. image:: _static/images/tablet/zoomed_in_markers.jpg
    :alt: map markers
+   :height: 480px
+   :align: center
 
 A path that has not been assigned to any boat will be colored white.
 
@@ -104,7 +108,7 @@ will be share the same color as the boat.
 A path segment that has been assigned to a boat, and the boat has finished that segment,
 will turn a dark grey. 
 
-:ref:`Top of this page <controllingtheboat>`
+:ref:`Top of this page <controlling_the_boat>`
 
 :ref:`Back to the index <index>`
 
@@ -127,6 +131,8 @@ This will open a new dialog.
 
 .. image:: _static/images/tablet/connect_to_boat.jpg
    :alt: connect to boat button
+   :height: 480px
+   :align: center
 
 .. _tablet_enter_ip_address:
 
@@ -137,6 +143,8 @@ Press the "Connect" button.
 
 .. image:: _static/images/tablet/connect_to_boat_dialog.jpg
    :alt: connect to boat dialog
+   :height: 480px
+   :align: center
 
 .. _tablet_connection_bar:
 
@@ -151,8 +159,10 @@ The IP address associated with the currently selected boat is also displayed in 
 
 .. image:: _static/images/tablet/ip_address_bar.jpg
    :alt: connection status bar
+   :height: 480px
+   :align: center
 
-:ref:`Top of this page <controllingtheboat>`
+:ref:`Top of this page <controlling_the_boat>`
 
 :ref:`Back to the index <index>`
 
@@ -176,8 +186,10 @@ button to force the map to center on top of the currently selected boat.
 
 .. image:: _static/images/tablet/center_view.jpg
    :alt: center view
+   :height: 480px
+   :align: center
 
-:ref:`Top of this page <controllingtheboat>`
+:ref:`Top of this page <controlling_the_boat>`
 
 :ref:`Back to the index <index>`
 
@@ -216,8 +228,10 @@ This option becomes useful if it is too difficult to accurately place waypoint b
 
 .. image:: _static/images/tablet/drop_waypoint_at_boat.jpg
    :alt: drop waypoint at boat button
+   :height: 480px
+   :align: center
 
-:ref:`Top of this page <controllingtheboat>`
+:ref:`Top of this page <controlling_the_boat>`
 
 :ref:`Back to the index <index>`
 
@@ -233,8 +247,10 @@ You can continue to press this button, and it will continue to remove the waypoi
 
 .. image:: _static/images/tablet/undo_last_waypoint.jpg
    :alt: remove last waypoint button
+   :height: 480px
+   :align: center
 
-:ref:`Top of this page <controllingtheboat>`
+:ref:`Top of this page <controlling_the_boat>`
 
 :ref:`Back to the index <index>`
 
@@ -247,8 +263,10 @@ Pressing this button will remove all the waypoints from the map.
 
 .. image:: _static/images/tablet/remove_all_waypoints.jpg
    :alt: remove all waypoints button
+   :height: 480px
+   :align: center
 
-:ref:`Top of this page <controllingtheboat>`
+:ref:`Top of this page <controlling_the_boat>`
 
 :ref:`Back to the index <index>`
 
@@ -269,6 +287,8 @@ and has the "move waypoint" button.
 
 .. image:: _static/images/tablet/waypoint_move.jpg
    :alt: move waypoint button
+   :height: 480px
+   :align: center
 
 Pressing this button will let you move the waypoint by tapping on the map.
 The waypoint will immediately move to that location.
@@ -277,7 +297,7 @@ If you want to move it to a location hidden by the information box,
 you will need to first move it to a spot far away.
 Then you will be able to move it again, with the desired location not hidden behind the box.
 
-:ref:`Top of this page <controllingtheboat>`
+:ref:`Top of this page <controlling_the_boat>`
 
 :ref:`Back to the index <index>`
 
@@ -299,8 +319,10 @@ The boat will then autonomously navigation back along the dropped waypoints.
 
 .. image:: _static/images/tablet/flip_waypoint_order.jpg
    :alt: Reverse waypoints order button
+   :height: 480px
+   :align: center
 
-:ref:`Top of this page <controllingtheboat>`
+:ref:`Top of this page <controlling_the_boat>`
 
 :ref:`Back to the index <index>`
 
@@ -331,11 +353,15 @@ To load a set of waypoints, you must
 
 .. image:: _static/images/tablet/advanced_options.jpg
    :alt: Advanced Options button
+   :height: 480px
+   :align: center
 
 .. image:: _static/images/tablet/save_and_load_waypoints.jpg
    :alt: Save and load waypoints buttons
+   :height: 480px
+   :align: center
 
-:ref:`Top of this page <controllingtheboat>`
+:ref:`Top of this page <controlling_the_boat>`
 
 :ref:`Back to the index <index>`
 
@@ -358,12 +384,18 @@ This length is measured in meters.
 
 .. image:: _static/images/tablet/generate_paths.jpg
    :alt: Three types of paths
+   :height: 480px
+   :align: center
 
 .. image:: _static/images/tablet/path_length.jpg
    :alt: Estimated path length
+   :height: 480px
+   :align: center
 
 .. image:: _static/images/tablet/path_types.jpg
    :alt: Types of paths
+   :height: 480px
+   :align: center
 
 .. _tablet_straight_path:
 
@@ -413,9 +445,10 @@ Be careful using a small value over a large area! You may overload the tablet's 
 
 .. image:: _static/images/tablet/transect_distance.jpg
    :alt: Transect distance
+   :height: 480px
+   :align: center
 
-
-:ref:`Top of this page <controllingtheboat>`
+:ref:`Top of this page <controlling_the_boat>`
 
 :ref:`Back to the index <index>`
 
@@ -436,8 +469,10 @@ This will also remove the path and waypoints.
 
 .. image:: _static/images/tablet/start_pause_stop.jpg
    :alt: Start, pause, and stop autonomous navigation buttons
+   :height: 480px
+   :align: center
 
-:ref:`Top of this page <controllingtheboat>`
+:ref:`Top of this page <controlling_the_boat>`
 
 :ref:`Back to the index <index>`
 
@@ -469,6 +504,8 @@ The boat's waypoint status is right above the battery voltage.
 
 .. image:: _static/images/tablet/boat_status.jpg
    :alt: Boat battery voltage and waypoint status
+   :height: 480px
+   :align: center
 
 .. _tablet_path_progress:
 
@@ -496,9 +533,10 @@ This prevents stale data from misleading a user.
 
 .. image:: _static/images/tablet/sensor_data.jpg
    :alt: Sensor data
+   :height: 480px
+   :align: center
 
-
-:ref:`Top of this page <controllingtheboat>`
+:ref:`Top of this page <controlling_the_boat>`
 
 :ref:`Back to the index <index>`
 
@@ -524,11 +562,15 @@ Selecting a new boat will also update the following, as the tablet starts listen
 
 .. image:: _static/images/tablet/selected_boat.jpg
    :alt: Currently selected boat
+   :height: 480px
+   :align: center   
 
 .. image:: _static/images/tablet/boat_arrows_and_selection.jpg
    :alt: Matching colors
+   :height: 480px
+   :align: center   
 
-:ref:`Top of this page <controllingtheboat>`
+:ref:`Top of this page <controlling_the_boat>`
 
 :ref:`Back to the index <index>`
 
@@ -555,9 +597,11 @@ You select these options by using the pulldown menu on the left of the GUI.
 
 .. image:: _static/images/tablet/boat_speed.jpg
    :alt: Speed selection
+   :height: 480px
+   :align: center   
 
 
-:ref:`Top of this page <controllingtheboat>`
+:ref:`Top of this page <controlling_the_boat>`
 
 :ref:`Back to the index <index>`
 
@@ -581,8 +625,10 @@ This is similar to the :ref:`RC transmitter's left stick<rc_throttle>`.
 
 .. image:: _static/images/tablet/thumbstick.jpg
    :alt: GUI thumbstick
+   :height: 480px
+   :align: center   
 
-:ref:`Top of this page <controllingtheboat>`
+:ref:`Top of this page <controlling_the_boat>`
 
 :ref:`Back to the index <index>`
 
@@ -604,6 +650,8 @@ A timer will appear below the button and start to count down 4 minutes, the time
 
 .. image:: _static/images/tablet/start_jars.jpg
    :alt: Start sampler jar buttons
+   :height: 480px
+   :align: center   
 
 Stopping all jars
 """""""""""""""""
@@ -613,6 +661,8 @@ executing jar timers. You will need to reset the sampler after doing this.
 
 .. image:: _static/images/tablet/stop_jars.jpg
    :alt: Stop sampler button
+   :height: 480px
+   :align: center   
 
 Resetting the sampler
 """""""""""""""""""""
@@ -623,9 +673,11 @@ To reset this, press and hold the reset button for ~ 1 second.
 
 .. image:: _static/images/tablet/reset_jars.jpg
    :alt: Reset sampler button
+   :height: 480px
+   :align: center   
 
 
-:ref:`Top of this page <controllingtheboat>`
+:ref:`Top of this page <controlling_the_boat>`
 
 :ref:`Back to the index <index>`
 
@@ -644,10 +696,12 @@ open a popup menu of the following options:
 #. :ref:`tablet_save_and_load_waypoints`
 #. :ref:`tablet_snooze_battery_alarms`
 #. :ref:`tablet_set_preferences`
-#. :ref:`tablet_construct_and_send_autonomous_triggers`
+#. :ref:`tablet_construct_and_send_autonomous_behaviors`
 
 .. image:: _static/images/tablet/advanced_options_menu.jpg
    :alt: Advanced options menu
+   :height: 480px
+   :align: center   
 
 .. _tablet_vector_vs_satellite_map:
 
@@ -658,6 +712,8 @@ These buttons switch the map between using vector graphics or satellite imagery.
 
 .. image:: _static/images/tablet/satellite_vector_map.jpg
    :alt: Vector and Satellite map selection
+   :height: 480px
+   :align: center   
 
 .. _tablet_set_go_home:
 
@@ -675,6 +731,8 @@ When the boat receives its first autonomous navigation command, it sets its home
 
 .. image:: _static/images/tablet/set_and_go_home.jpg
    :alt: Set and go home buttons
+   :height: 480px
+   :align: center   
 
 .. _tablet_send_pids:
 
@@ -686,6 +744,8 @@ Pressing this button will resend the PID values associated with the
 
 .. image:: _static/images/tablet/send_pids.jpg
    :alt: Send PIDs button
+   :height: 480px
+   :align: center   
 
 .. _tablet_save_and_load_waypoints:
 
@@ -707,6 +767,8 @@ You should only use this if you are keeping a close eye on the battery levels!
 
 .. image:: _static/images/tablet/snooze_alarms.jpg
    :alt: Snooze alarms button
+   :height: 480px
+   :align: center 
 
 .. _tablet_set_preferences:
 
@@ -717,6 +779,8 @@ Pressing this button will open up another screen with several optional settings
 
 .. image:: _static/images/tablet/preferences.jpg
    :alt: Preferences button
+   :height: 480px
+   :align: center   
 
 Aside from the vehicle type setting, these options are usually left at their default values.
 Only expert users should change preferences other than vehicle type!
@@ -739,6 +803,8 @@ slow, medium, and fast speed settings.
 
 .. image:: _static/images/tablet/preferences_vehicle_type.jpg
    :alt: Preferences: vehicle type
+   :height: 480px
+   :align: center   
 
 .. _tablet_preferences_joystick_range:
 
@@ -756,6 +822,8 @@ Do *not* forget the negative sign in front of the minimum, or the boat will only
 
 .. image:: _static/images/tablet/preferences_joystick_range.jpg
    :alt: Preferences: joystick range
+   :height: 480px
+   :align: center   
 
 .. _tablet_preferences_custom_pids:
 
@@ -766,6 +834,8 @@ An expert user can change the PID values associated with the "Custom" speed sett
 
 .. image:: _static/images/tablet/preferences_custom_pids.jpg
    :alt: Preferences: custom PID values
+   :height: 480px
+   :align: center   
 
 .. _tablet_preferences_battery_alarm_settings:
 
@@ -776,24 +846,27 @@ These options allow an expert user to select the voltage levels that trigger war
 
 .. image:: _static/images/tablet/preferences_battery_warnings.jpg
    :alt: Preferences: battery alarm settings
+   :height: 480px
+   :align: center   
 
+.. _tablet_construct_and_send_autonomous_behaviors:
 
-.. _tablet_construct_and_send_autonomous_triggers:
-
-Construct and send new autonomous triggers
-""""""""""""""""""""""""""""""""""""""""""
+Construct and send new autonomous behaviors
+"""""""""""""""""""""""""""""""""""""""""""
 
 Pressing this button will open up another screen. This screen is currently under construction.
 
 Once completed, it will provide a user interface to construct and send 
-new :ref:`autonomous triggers<autonomous_triggers>` to the boat.
+new :ref:`autonomous behaviors<autonomous_behaviors>` to the boat.
 
 Until this is completed, the user should press the back button to return to the main GUI.
 
 .. image:: _static/images/tablet/autonomy.jpg
    :alt: Autonomy construction button
+   :height: 480px
+   :align: center   
 
-:ref:`Top of this page <controllingtheboat>`
+:ref:`Top of this page <controlling_the_boat>`
 
 :ref:`Back to the index <index>`
 
@@ -828,7 +901,7 @@ If you leave the override on and turn off the transmitter, the override will rem
 
 .. raw:: html
 
-   <video width="640" height="480" controls muted> 
+   <video width="640" height="480" style="display:block; margin: 0 auto;" controls muted> 
      <source src="_static/videos/rc_override.mp4" type="video/mp4"/>
      Your browser does not support the video tag.
    </video>
@@ -849,7 +922,7 @@ Currently, *only the thrust is affected*! The rudder signals are not throttled.
 
 .. raw:: html
 
-   <video width="640" height="480" controls muted> 
+   <video width="640" height="480" style="display:block; margin: 0 auto;" controls muted> 
      <source src="_static/videos/rc_control_throttle.mp4" type="video/mp4"/>
      Your browser does not support the video tag.
    </video>
@@ -863,7 +936,7 @@ The right stick controls both the thrust (forward and backward) and rudder (left
 
 .. raw:: html
 
-   <video width="640" height="480" controls muted> 
+   <video width="640" height="480" style="display:block; margin: 0 auto;" controls muted> 
      <source src="_static/videos/rc_control_thrust_and_rudder.mp4" type="video/mp4"/>
      Your browser does not support the video tag.
    </video>
@@ -897,19 +970,16 @@ drifting into a spin, and gently provide thrust in the opposite direction.
 Consistently driving in straight lines with an airboat will require practice!
 
 
-
-
-
-:ref:`Top of this page <controllingtheboat>`
+:ref:`Top of this page <controlling_the_boat>`
 
 :ref:`Back to the index <index>`
 
-.. _autonomous_triggers:
+.. _autonomous_behaviors:
 
-Autonomous triggers
--------------------
+Autonomous behaviors
+--------------------
 
-Autonomous triggers allow the autonomous boat to perform actions once a set of conditions has been fulfilled.
+Autonomous behaviors allow the autonomous boat to perform actions once a set of conditions has been fulfilled.
 
 This logic-action pair is referred to as a "behavior".
 Each behavior is defined by five things:
@@ -996,7 +1066,7 @@ Possible states and their identifying strings
 +------------------------------+----------------------------------------------------------+
 | is_taking_sample             | True if the sampler is currently gathering a sample      |
 +------------------------------+----------------------------------------------------------+
-| jars_available               | True if the sampler still has open jars                  |
+| jars_available               | True if the sampler still has unused jars                |
 +------------------------------+----------------------------------------------------------+
 
 This list can be expanded by updating the phone app to include new states.
@@ -1052,6 +1122,8 @@ With this definition, once per second the phone app will check the following con
 
 If *all 3* conditions are met, the boat will start pumping water into a sampler jar.
 
+.. _default_autonomous_file:
+
 Default behavior file
 ^^^^^^^^^^^^^^^^^^^^^
 
@@ -1070,16 +1142,13 @@ This capability is being developed.
 Currently, only the default behaviors file can be used.
 
 
-.. _operating_the_pg_filtering:
-
-Operating the Personal Genomics filtering system
-------------------------------------------------
-
-asdf
+.. .. _operating_the_pg_filtering:
+.. Operating the Personal Genomics filtering system
+.. ------------------------------------------------
 
 
 
 
-:ref:`Top of this page <controllingtheboat>`
+:ref:`Top of this page <controlling_the_boat>`
 
 :ref:`Back to the index <index>`

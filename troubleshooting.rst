@@ -591,7 +591,7 @@ If the damage is extensive for one propeller but not the other, the boat may eve
 Check for a damaged propeller.
 
 If the propellers are not damaged but the boat still revs the motors back and forth,
-the :ref:`PID control needs to be adjusted<manual_pid_tuning>`. 
+the :ref:`PID control needs to be adjusted<tablet_preferences_custom_pids>`. 
 
 :ref:`Top of this page <troubleshooting>`
 

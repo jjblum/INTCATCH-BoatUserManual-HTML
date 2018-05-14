@@ -439,8 +439,8 @@ with a special rear plate and a propeller boat.
 * Each tube is installed on its own peristaltic pump.
 * It takes approximately 4 minutes to fill a jar.
 
-The jars can be individually :ref:`activated with the tablet<operating_the_sampler>` 
-or :ref:`triggered autonomously<autonomous_triggers>`.
+The jars can be individually :ref:`activated with the tablet<tablet_sampler>` 
+or :ref:`triggered autonomously<autonomous_behaviors>`.
 
 .. image:: _static/images/sampler.jpg
    :alt: sampler
