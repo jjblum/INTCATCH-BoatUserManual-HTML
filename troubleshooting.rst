@@ -496,7 +496,7 @@ To fix this,
 #. :ref:`Reinstall the app<install_tablet_app>`.
 #. Re-cache the tiles.
 
-An issue [WILL BE] logged with MapBox to address this bug.
+An issue has been logged with MapBox to address this bug: https://github.com/mapbox/mapbox-gl-native/issues/11996.
 
 :ref:`Top of this page <troubleshooting>`
 
