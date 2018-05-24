@@ -15,7 +15,6 @@ Troubleshooting
 * :ref:`escs_run_hot`
 * :ref:`find_water_in_rear`
 * :ref:`boat_wifi_never_appears`
-* TODO don't remember password to boat WiFi
 * :ref:`bluebox_will_not_turn_on`
 * :ref:`tablet_will_not_connect_to_phone`
 * :ref:`tablet_crashes_when_connect_to_boat`
@@ -31,7 +30,6 @@ Troubleshooting
 * :ref:`tablet_map_does_not_load`
 * :ref:`tablet_map_tiles_lack_water_details`
 * :ref:`tablet_map_unloads_tiles`
-* TODO Sensor ___ is not working
 * :ref:`rc_does_not_work`
 * :ref:`boat_will_not_start_waypoints`
 * :ref:`propellers_turn_in_wrong_direction`
@@ -41,8 +39,7 @@ Troubleshooting
 * :ref:`airfan_weak_but_loud`
 * :ref:`airboat_hard_to_steer`
 * :ref:`lipo_is_puffy`
-* TODO Sampler jar does not start - try resetting first
-* TODO Oops, a wire came loose or I damaged ___
+* :ref:`sampler_does_not_start`
 * :ref:`data_not_in_wais`
 
 
@@ -682,9 +679,27 @@ In any case, a healthy LiPo battery feels firm if you squeeze it.
 If the LiPo battery has become puffy and feels squishy if you squeeze it, 
 do *NOT* continue using it.
 
+Read the :ref:`safety page on LiPo batteries<lipo_battery_safety>`.
+
 :ref:`Top of this page <troubleshooting>`
 
 :ref:`Back to the index <index>`
+
+
+.. _sampler_does_not_start:
+
+Sampler jar does not start
+--------------------------
+
+If you :ref:`press the button to start a jar<tablet_sampler>` 
+but the :ref:`sampler<platypus_sampler>` does not turn on the 
+corresponding jar, long press (hold for ~ 1 second) the sampler
+reset button.
+
+:ref:`Top of this page <troubleshooting>`
+
+:ref:`Back to the index <index>`
+
 
 .. _data_not_in_wais:
 
