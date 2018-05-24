@@ -156,7 +156,7 @@ stored tiles. You will need to download them again.
 .. _filling_the_cooling_loop:
 
 Fill up cooling loop reservoir
------------------------------
+------------------------------
 
 The :ref:`cooling loop<cooling_loop>` reservoir should be at least
 half-full when you deploy the boat.
