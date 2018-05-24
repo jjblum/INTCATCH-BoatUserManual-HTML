@@ -906,6 +906,8 @@ If you leave the override on and turn off the transmitter, the override will rem
      Your browser does not support the video tag.
    </video>
 
+*video also available at* http://intcatch.eu/manual/_static/videos/rc_override.mp4
+
 .. _rc_throttle:
 
 Power throttle
@@ -927,6 +929,8 @@ Currently, *only the thrust is affected*! The rudder signals are not throttled.
      Your browser does not support the video tag.
    </video>
 
+*video also available at* http://intcatch.eu/manual/_static/videos/rc_control_throttle.mp4   
+
 .. _rc_thrust_and_rudder:
 
 Thrust and Rudder
@@ -940,6 +944,8 @@ The right stick controls both the thrust (forward and backward) and rudder (left
      <source src="_static/videos/rc_control_thrust_and_rudder.mp4" type="video/mp4"/>
      Your browser does not support the video tag.
    </video>
+
+*video also available at* http://intcatch.eu/manual/_static/videos/rc_control_thrust_and_rudder.mp4   
 
 .. _rc_tips:
 

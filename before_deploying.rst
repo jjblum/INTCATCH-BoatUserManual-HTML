@@ -86,6 +86,8 @@ Take a look at :ref:`LiPo battery safety<lipo_battery_safety>`.
      Your browser does not support the video tag.
    </video>
 
+*video also available at* http://intcatch.eu/manual/_static/videos/charge_battery.mp4
+
 :ref:`Top of this page <before_deploying>`
 
 :ref:`Back to the index <index>`

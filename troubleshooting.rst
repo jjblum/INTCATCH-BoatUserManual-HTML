@@ -273,6 +273,8 @@ The hub is on the right (starboard) side of the white housing.
      Your browser does not support the video tag.
    </video>
 
+*video also available at* http://intcatch.eu/manual/_static/videos/usb_hub.mp4   
+
 :ref:`Top of this page <troubleshooting>`
 
 :ref:`Back to the index <index>`

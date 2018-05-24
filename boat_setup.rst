@@ -55,6 +55,8 @@ Use your thumb to push.
 		Your browser does not support the video tag.
 	</video>
 
+*video also available at* http://intcatch.eu/manual/_static/videos/sliding_lock_remove.mp4
+
 :ref:`Back to the sequence <startupsequence>`
 
 .. _pluginthebattery:
@@ -73,6 +75,8 @@ Finally, connect the yellow xt90 connectors.
 		Your browser does not support the video tag.
 	</video>
 
+*video also available at* http://intcatch.eu/manual/_static/videos/insert_battery.mp4
+
 :ref:`Back to the sequence <startupsequence>`
 
 .. _turnontheeboard:
@@ -88,6 +92,8 @@ Press the small white button on the eboard - the circuit board installed in the 
      <source src="_static/videos/eboard_button_closeup.mp4" type="video/mp4"/>
      Your browser does not support the video tag.
    </video>
+
+*video also available at* http://intcatch.eu/manual/_static/videos/eboard_button_closeup.mp4
 
 :ref:`Back to the sequence <startupsequence>`
 
@@ -132,6 +138,8 @@ Once the phone is plugged into the rest of the system and the BlueBox, these war
      Your browser does not support the video tag.
    </video>
 
+*video also available at* http://intcatch.eu/manual/_static/videos/phone_app_start.mp4   
+
 :ref:`Back to the sequence <startupsequence>`
 
 .. _rememberip:
@@ -159,6 +167,8 @@ Without this, the boat will not be able to correctly measure its heading.
      Your browser does not support the video tag.
    </video>
 
+*video also available at* http://intcatch.eu/manual/_static/videos/compass_calibrate.mp4   
+
 :ref:`Back to the sequence <startupsequence>`
 
 .. _pluginthephone:
@@ -175,6 +185,8 @@ The electronic speed controllers (ESCs) in the boat's rear compartment should be
      <source src="_static/videos/plug_in_phone.mp4" type="video/mp4"/>
      Your browser does not support the video tag.
    </video>
+
+*video also available at* http://intcatch.eu/manual/_static/videos/plug_in_phone.mp4
 
 :ref:`Back to the sequence <startupsequence>`
 
@@ -193,6 +205,8 @@ This sends a signal from the phone to the arduino to expect the BlueBox and RC r
      Your browser does not support the video tag.
    </video>
 
+*video also available at* http://intcatch.eu/manual/_static/videos/phone_app_sensor_type_button.mp4
+
 :ref:`Back to the sequence <startupsequence>`
 
 .. _attachphonetovelcro:
@@ -210,6 +224,8 @@ Try not to press the side of the phone down too hard - we do not want to hold do
      Your browser does not support the video tag.
    </video>
 
+*video also available at* http://intcatch.eu/manual/_static/videos/mount_phone.mp4
+
 :ref:`Back to the sequence <startupsequence>`
 
 .. _blueboxswitch:
@@ -225,6 +241,8 @@ Flip the large red switch in the forward right(starboard bow) corner of the whit
      <source src="_static/videos/bb_switch_on.mp4" type="video/mp4"/>
      Your browser does not support the video tag.
    </video>
+
+*video also available at* http://intcatch.eu/manual/_static/videos/bb_switch_on.mp4
 
 :ref:`Back to the sequence <startupsequence>`
 
@@ -297,6 +315,7 @@ Make sure the brackets are aligned and pinched together, and the black locks sho
      Your browser does not support the video tag.
    </video>
 
+*video also available at* http://intcatch.eu/manual/_static/videos/sliding_lock_attach.mp4
 
 :ref:`Back to the sequence <startupsequence>`
 
@@ -305,8 +324,10 @@ Make sure the brackets are aligned and pinched together, and the black locks sho
 Use RC controller to verify correct left/right turning direction
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Make sure RC controller is using the model bound to the receiver in the boat.
-[link to troubleshooting for RC not working]
+Make sure the :ref:`RC controller<rc_equipment>` is using the model bound to the receiver in the boat,
+then :ref:`activate the override<rc_override>` and :ref:`use the right stick<rc_thrust_and_rudder>` to turn.
+
+If you have trouble with the RC, look :ref:`here<rc_does_not_work>`.
 
 :ref:`Back to the sequence <startupsequence>`
 

@@ -35,7 +35,7 @@ The INTCATCH boat can be controlled in two different ways:
 
 The :ref:`RC controller<rc_equipment>` can be used when the user needs a direct control of the boat
 (e.g., for manually steering the boat).
-It works on a radio signal thus allowing for long range (>1.5km) connection to the boat.
+It works on a radio signal thus allowing for long range (up to 1 km) connection to the boat.
 
 .. image:: _static/images/overview/architecture.jpg
    :height: 480px
