@@ -155,10 +155,10 @@ stored tiles. You will need to download them again.
 
 .. _filling_the_cooling_loop:
 
-Fill up cooling loop resevoir
+Fill up cooling loop reservoir
 -----------------------------
 
-The :ref:`cooling loop<cooling_loop>` resevoir should be at least
+The :ref:`cooling loop<cooling_loop>` reservoir should be at least
 half-full when you deploy the boat.
 
 If it is not, unscrew the lid and *carefully* pour in a small amount
@@ -171,14 +171,6 @@ After you finish, make sure to replace the resevoirs lid.
 :ref:`Back to the index <index>`
 
 .. _bluebox_sensor_calibration:
-
-Sensor calibration
-------------------
-[brief description, provide links to GoSys information]
-
-:ref:`Top of this page <before_deploying>`
-
-:ref:`Back to the index <index>`
 
 .. _computer_to_phone_or_tablet:
 

@@ -134,7 +134,7 @@ There should not be any water in the rear compartment.
 If you see any, you should determine if it is :ref:`coolant <cooling_loop>` or a leak.
 
 Ideally the coolant will be colored, so this will be easy to tell.
-If not, look at the cooling loop's resevoir. It should be nearly full.
+If not, look at the cooling loop's reservoir. It should be nearly full.
 If if it is low, fill it back up and turn on the boat. Look for any coolant leaks.
 
 If you can be sure that there is not a coolant leak, then the water is from a leaky hull.

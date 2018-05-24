@@ -263,7 +263,7 @@ The small plastic bottle in the rear compartment is the cooling fluid resevoir.
    :align: center   
 
 .. image:: _static/images/resevoir.jpg
-   :alt: cooling loop resevoir
+   :alt: cooling loop reservoir
    :height: 480px
    :align: center   
 
