@@ -8,12 +8,16 @@
 Table of Contents
 =================
 
-.. image:: _static/images/robot_at_garda.jpg
+.. image:: _static/images/logo.png
    :alt: intcatch boats
-   :height: 480px
+   :width: 400px
    :align: center
    
-
+.. image:: _static/images/robot_at_garda.jpg
+   :alt: intcatch boats
+   :width: 400px
+   :align: center
+   
 .. toctree::
    :maxdepth: 1
 
@@ -29,6 +33,11 @@ Table of Contents
    data
 
 * :ref:`search`
+
+.. image:: _static/images/eu.png
+   :alt: intcatch boats
+   :width: 400px
+   :align: right
 
 
 ..
